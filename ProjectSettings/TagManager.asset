@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Portal
+  - shop_Portal
+  - house_Portal
+  - farm_Portal
+  - path_Portal
   layers:
   - Default
   - TransparentFX
@@ -48,7 +52,7 @@ TagManager:
   - name: fore
     uniqueID: 1906811143
     locked: 0
-  - name: entity
+  - name: stage
     uniqueID: 3579147271
     locked: 0
   m_RenderingLayers:
