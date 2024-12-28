@@ -15,8 +15,8 @@ public class house_portal : MonoBehaviour
         
     }
 
-    void ChangeScene()
+    public void ChangeScene_house()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Home");
     }
 }

@@ -69,6 +69,7 @@ public class playercontroller : MonoBehaviour
         goshop(coll);
         gofarm(coll);
         gopath(coll);
+        gohome(coll);
     }
 
     void goshop(Collider2D coll)
@@ -90,6 +91,14 @@ public class playercontroller : MonoBehaviour
         if (coll.gameObject.tag == "path_Portal")
         {
             coll.gameObject.GetComponent<path_Portal>().ChangeScene_path();
+        }
+    }
+
+    void gohome(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "house_Portal")
+        {
+            coll.gameObject.GetComponent<house_portal>().ChangeScene_house();
         }
     }
     //void OnTriggerEnter2D_farm(Collider2D coll)

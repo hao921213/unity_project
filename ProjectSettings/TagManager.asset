@@ -9,6 +9,8 @@ TagManager:
   - house_Portal
   - farm_Portal
   - path_Portal
+  - cave_Portal
+  - forest_Portal
   layers:
   - Default
   - TransparentFX
@@ -54,6 +56,9 @@ TagManager:
     locked: 0
   - name: stage
     uniqueID: 3579147271
+    locked: 0
+  - name: front
+    uniqueID: 1058493229
     locked: 0
   m_RenderingLayers:
   - Default
