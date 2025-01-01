@@ -35,6 +35,7 @@ public class bag_controller : MonoBehaviour
             // CreateNewItem(instance.player_bag.itemlist[i]);
             instance.slots.Add(Instantiate(instance.empty_slot));
             instance.slots[i].transform.SetParent(instance.slot_grid.transform); 
+            instance.slots[i].GetComponent<slot>().slot_id=i;
             instance.slots[i].GetComponent<slot>().SetupSlot(instance.player_bag.itemlist[i]);
         }
     }
