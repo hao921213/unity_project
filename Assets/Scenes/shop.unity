@@ -268,7 +268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: money
+  m_Text: 0
 --- !u!222 &444636840
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 634020393}
   m_OnClick:
     m_PersistentCalls:
@@ -8211,6 +8211,12 @@ MonoBehaviour:
   slot_prefab: {fileID: 694967335656619892, guid: 42be8ea8e1a4ae34caabffde28440de5, type: 3}
   informationText: {fileID: 1000453518}
   price_Text: {fileID: 444636839}
+  player_money_Text: {fileID: 1140121762}
+  nextPageButton: {fileID: 1082227491}
+  prevPageButton: {fileID: 1126145610}
+  buy_btn: {fileID: 634020392}
+  player: {fileID: 1466474474}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1031490674
 GameObject:
   m_ObjectHideFlags: 0
@@ -9163,6 +9169,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5823874, y: 1.6952556}
   m_EdgeRadius: 0
+--- !u!114 &1466474474 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4501558508062787231, guid: 3505a28350ae15c4f885ec2fcad852af, type: 3}
+  m_PrefabInstance: {fileID: 1626399819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7e8a7ad48339b498ac06bfee7bdb3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1578873050 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1664595733655091896, guid: 47b13907fac4a2d43acba091b8865fc1, type: 3}

@@ -483,7 +483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0f4f13f1df52b43b472864eddcf019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  this_item: {fileID: 11400000, guid: 240a3451cf5697648809d00b1f8e220c, type: 2}
+  this_item: {fileID: 11400000, guid: 5d5e5fff07f0a7b42904438d8ed28051, type: 2}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!61 &554015182
 BoxCollider2D:
@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0f4f13f1df52b43b472864eddcf019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  this_item: {fileID: 11400000, guid: b4f606d61372dc44899d76c76db92947, type: 2}
+  this_item: {fileID: 11400000, guid: 36ccd1cfc80ccd546bec3a13102af20d, type: 2}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!61 &604220364
 BoxCollider2D:
@@ -928,7 +928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0f4f13f1df52b43b472864eddcf019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  this_item: {fileID: 11400000, guid: 240a3451cf5697648809d00b1f8e220c, type: 2}
+  this_item: {fileID: 11400000, guid: 5d5e5fff07f0a7b42904438d8ed28051, type: 2}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!61 &874690522
 BoxCollider2D:

@@ -1,3 +1,4 @@
+using System.Data.SqlTypes;
 using UnityEngine;
 
 public class playercontroller : MonoBehaviour
@@ -7,9 +8,11 @@ public class playercontroller : MonoBehaviour
     public GameObject bag;
     private bool isopen;
     private Vector3 originalScale; 
+    public int money;
 
     void Start()
     {
+        money=0;
         isopen=false;
         bag.SetActive(isopen);
         originalScale = transform.localScale;
@@ -24,7 +27,6 @@ public class playercontroller : MonoBehaviour
         float moveX = 0f;
         float moveY = 0f;
 
-        // 检测具体按键
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) // 右
         {
             moveX = 1f;

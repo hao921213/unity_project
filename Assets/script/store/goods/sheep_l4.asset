@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
+  m_Name: sheep_l4
+  m_EditorClassIdentifier: 
+  item_name: sheep_l4
+  item_image: {fileID: 238371156, guid: d8021e44b0cc86341a68d452ea1f300f, type: 3}
+  price: 1000
+  held: 1
+  iteminfo: 
