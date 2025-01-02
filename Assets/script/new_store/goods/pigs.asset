@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
-  m_Name: cows
+  m_Name: pigs
   m_EditorClassIdentifier: 
-  item_name: cow
-  item_image: {fileID: 2006960206, guid: ff39305565d3f664998492b1638fdbf5, type: 3}
-  price: 10000
-  held: 20
-  iteminfo: "\u6BDB"
+  item_name: pig
+  item_image: {fileID: -1792014262, guid: 706963e052c806c448479a4069917eea, type: 3}
+  price: 50
+  held: 10
+  iteminfo: "\u72D7"

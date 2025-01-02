@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item_name: carrot
   item_image: {fileID: 1720569650, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
+  price: 100
   held: 2
   iteminfo: This is a carrot

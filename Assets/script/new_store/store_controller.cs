@@ -1,12 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class store_controller : MonoBehaviour
 {
     public bag storeBag; // 商店數據
     public GameObject slot_grid; // 用於存放物品槽的 UI 容器
     public GameObject slot_prefab; // 商店物品槽的預製件
-
+    public Text informationText;
+    public Text price_Text;
     private List<GameObject> slots = new List<GameObject>(); // 保存所有生成的物品槽
 
     void Start()
@@ -30,7 +32,7 @@ public class store_controller : MonoBehaviour
 
             if (slotComponent != null)
             {
-                slotComponent.SetupSlot(storeItem);
+                slotComponent.SetupSlot(storeItem,informationText,price_Text);
                 slots.Add(newSlot);
             }
             else

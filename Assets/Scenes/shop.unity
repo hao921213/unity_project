@@ -8209,6 +8209,8 @@ MonoBehaviour:
   storeBag: {fileID: 11400000, guid: 886d61eca295cf146b5fd93cb6e53ff9, type: 2}
   slot_grid: {fileID: 1727444560}
   slot_prefab: {fileID: 694967335656619892, guid: 42be8ea8e1a4ae34caabffde28440de5, type: 3}
+  informationText: {fileID: 1000453518}
+  price_Text: {fileID: 444636839}
 --- !u!1 &1031490674
 GameObject:
   m_ObjectHideFlags: 0
