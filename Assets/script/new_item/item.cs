@@ -6,4 +6,6 @@ public class item : ScriptableObject
     public string item_name;
     public Sprite item_image;
     public int held;
+    [TextArea]
+    public string iteminfo;
 }
