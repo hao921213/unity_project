@@ -104,6 +104,7 @@ public class store_controller : MonoBehaviour
                 if(item!=null && item.item_name==selectedItem.item_name){
                     item.held += 1;
                     Debug.Log($"購買成功: {selectedItem.item_name}");
+                    bag_controller.change();
                     return;
                 }
             }
@@ -112,6 +113,7 @@ public class store_controller : MonoBehaviour
                 if(player_bag.itemlist[i]==null){
                     player_bag.itemlist[i]=selectedItem;
                     Debug.Log($"購買成功: {selectedItem.item_name}");
+                    bag_controller.change();
                     return;
                 }
             }

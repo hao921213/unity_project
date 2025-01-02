@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 public class bag_controller : MonoBehaviour
@@ -9,13 +10,21 @@ public class bag_controller : MonoBehaviour
     // public slot slotprefab;
     public GameObject empty_slot;
     public  List<GameObject> slots=new List<GameObject>();
+    static bool ischange = false;
     void Awake() {
         if(instance!=null){
             Destroy(this);
         }    
         instance=this;
     }
-
+    void Update(){
+        // 檢查面板是否被激活
+        if (ischange)
+        {
+            RefreshItem();
+            ischange=false;   
+        }
+    }
     // public static void CreateNewItem(item item){
     //     slot newItem=Instantiate(instance.slotprefab,instance.slot_grid.transform.position,Quaternion.identity);
     //     newItem.gameObject.transform.SetParent(instance.slot_grid.transform);
@@ -38,5 +47,8 @@ public class bag_controller : MonoBehaviour
             instance.slots[i].GetComponent<slot>().slot_id=i;
             instance.slots[i].GetComponent<slot>().SetupSlot(instance.player_bag.itemlist[i]);
         }
+    }
+    static public void change(){
+        ischange=true;
     }
 }
