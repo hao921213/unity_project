@@ -9,6 +9,7 @@ public class animal_move : MonoBehaviour
     private Transform posRight;
     private Transform posLeft;
     private float renavigation_timer;
+    public LayerMask obstacleLayer;
 
     private void Awake()
     {
@@ -46,13 +47,14 @@ public class animal_move : MonoBehaviour
             Vector2 dir = (randomPos - (Vector2)this.transform.position).normalized;
 
             // 翻轉 Sprite 朝向
-            if (dir.x > 0)
+            sprite.flipX = dir.x > 0;
+
+            // 檢測是否碰到障礙物
+            Collider2D hit = Physics2D.OverlapCircle(transform.position, 0.1f, obstacleLayer);
+            if (hit != null)
             {
-                sprite.flipX = true; // 面向右
-            }
-            else
-            {
-                sprite.flipX = false; // 面向左
+                Debug.Log("移動被阻止，檢測到障礙物：" + hit.gameObject.name);
+                return; // 如果有障礙物，停止移動
             }
 
             // 設置速度
