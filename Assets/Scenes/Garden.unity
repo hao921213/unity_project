@@ -14453,6 +14453,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Campfire_Anim_0
       objectReference: {fileID: 0}
+    - target: {fileID: 5107021799011606679, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999792
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107021799011606679, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0064507085
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 0.9373371
+      objectReference: {fileID: 0}
     - target: {fileID: 8365654066666950505, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_SortingLayer
       value: 3
