@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
   m_Name: pump_seed
   m_EditorClassIdentifier: 
-  item_name: pump
+  item_name: pump_seed
   item_image: {fileID: -1079600447, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
   price: 0
-  held: 0
+  held: 1
   iteminfo: 
