@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject[] monsterPrefabs; // ¤£¦PºØÃşªº©Çª«
+    public GameObject[] monsterPrefabs; // ä¸åŒç¨®é¡çš„æ€ªç‰©
     public Vector2 mapBottomLeft;
     public Vector2 mapTopRight;
-    public float spawnInterval = 2f;   // ¥Í¦¨¶¡¹j
-    public int maxMonsters = 10;       // ³Ì¤j¥Í¦¨¼Æ¶q
+    public float spawnInterval = 2f;   // ç”Ÿæˆé–“éš”
+    public int maxMonsters = 10;       // æœ€å¤§ç”Ÿæˆæ•¸é‡
 
-    private int currentMonsterCount = 0; // ·í«e¤w¥Í¦¨ªº©Çª«¼Æ¶q
+    private int currentMonsterCount = 0; // ç•¶å‰å·²ç”Ÿæˆçš„æ€ªç‰©æ•¸é‡
 
     void Start()
     {
@@ -24,13 +24,13 @@ public class SpawnManager : MonoBehaviour
             float randomY = Random.Range(mapBottomLeft.y, mapTopRight.y);
             Vector2 spawnPosition = new Vector2(randomX, randomY);
 
-            // ÀH¾÷¿ï¾Ü©Çª«
+            // éš¨æ©Ÿé¸æ“‡æ€ªç‰©
             int monsterIndex = Random.Range(0, monsterPrefabs.Length);
             Instantiate(monsterPrefabs[monsterIndex], spawnPosition, Quaternion.identity);
 
-            currentMonsterCount++; // ¼W¥[·í«e©Çª«¼Æ¶q
+            currentMonsterCount++; // å¢åŠ ç•¶å‰æ€ªç‰©æ•¸é‡
 
-            yield return new WaitForSeconds(spawnInterval); // µ¥«İ«ü©w¶¡¹j¦A¥Í¦¨
+            yield return new WaitForSeconds(spawnInterval); // ç­‰å¾…æŒ‡å®šé–“éš”å†ç”Ÿæˆ
         }
     }
 }
