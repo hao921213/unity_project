@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 6549732031695366308}
   - component: {fileID: 8266776437686662952}
   - component: {fileID: -8055016849611398472}
-  - component: {fileID: 8239390461072974870}
-  m_Layer: 0
+  - component: {fileID: 1899696063662164427}
+  - component: {fileID: 9003535854427033388}
+  - component: {fileID: 6318006043578293994}
+  m_Layer: 6
   m_Name: Chicken_01_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -715820025
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 2117401228, guid: 8e76c0e20ef59ed4e8a88d4af0429552, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -123,7 +125,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0089838505, y: -0.008983791}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -133,9 +135,52 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.1914544, y: 1.1914538}
   m_EdgeRadius: 0
---- !u!95 &8239390461072974870
+--- !u!50 &1899696063662164427
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4327863122638164834}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &9003535854427033388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4327863122638164834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44b400fc89b257c45b2e955b54f2d405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!95 &6318006043578293994
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -145,7 +190,7 @@ Animator:
   m_GameObject: {fileID: 4327863122638164834}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 58c393e9a929e2d48843b3f19f504e85, type: 2}
+  m_Controller: {fileID: 9100000, guid: 613d4ff6755605b4ba2f31a52b893f86, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
