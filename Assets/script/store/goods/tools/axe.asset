@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
-  m_Name: carrot
+  m_Name: axe
   m_EditorClassIdentifier: 
-  item_name: carrot
-  item_image: {fileID: 1720569650, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
-  price: 100
-  held: 1
-  iteminfo: This is a carrot
+  item_name: 
+  item_image: {fileID: 1296402442, guid: d96238aedd3f22c43a162b8f78ebc1e3, type: 3}
+  price: 0
+  held: 0
+  iteminfo: 
