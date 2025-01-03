@@ -3,38 +3,37 @@ using UnityEngine.UI;
 
 public class health_bar : MonoBehaviour
 {
-    public Slider healthSlider;  // ¦å¶q±ø Slider
-    public float maxHealth = 5f;
-    private float currentHealth;
+    public Slider healthSlider;  // ï¿½ï¿½qï¿½ï¿½ Slider
+    public float maxHealth = 10f;
+    public player1 player;
 
     private void Start()
     {
-        currentHealth = maxHealth;
         UpdateHealthBar();
     }
 
-    // §ó·s¦å¶q
+    // ï¿½ï¿½sï¿½ï¿½q
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        player.health -= damage;
+        player.health = Mathf.Clamp(player.health, 0, maxHealth);
         UpdateHealthBar();
     }
 
-    // «ì´_¦å¶q
+    // ï¿½ï¿½_ï¿½ï¿½q
     public void Heal(float amount)
     {
-        currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        player.health += amount;
+        player.health = Mathf.Clamp(player.health, 0, maxHealth);
         UpdateHealthBar();
     }
 
-    // §ó·s¦å¶q±ø
+    // ï¿½ï¿½sï¿½ï¿½qï¿½ï¿½
     private void UpdateHealthBar()
     {
         if (healthSlider != null)
         {
-            healthSlider.value = currentHealth / maxHealth;
+            healthSlider.value = player.health / maxHealth;
         }
     }
 }

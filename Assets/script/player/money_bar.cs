@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class money_bar : MonoBehaviour
 {
-    public player player;
+    public player1 player;
     public Text text;
 
     // Update is called once per frame

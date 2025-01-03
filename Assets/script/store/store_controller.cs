@@ -14,7 +14,7 @@ public class store_controller : MonoBehaviour
     public Button nextPageButton; // 下一頁按鈕
     public Button prevPageButton; // 上一頁按鈕
     public Button buy_btn;
-    public player player;
+    public player1 player;
     public bag player_bag;
 
     private List<GameObject> slots = new List<GameObject>(); // 保存當前頁的物品槽
