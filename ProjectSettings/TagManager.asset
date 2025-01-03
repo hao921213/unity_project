@@ -11,6 +11,7 @@ TagManager:
   - path_Portal
   - cave_Portal
   - forest_Portal
+  - enemy1
   layers:
   - Default
   - TransparentFX
