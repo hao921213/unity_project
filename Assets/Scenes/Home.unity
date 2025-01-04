@@ -15677,34 +15677,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Campfire_Anim_0
       objectReference: {fileID: 0}
-    - target: {fileID: 5107021799011606679, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99995273
-      objectReference: {fileID: 0}
-    - target: {fileID: 5107021799011606679, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.009721471
-      objectReference: {fileID: 0}
-    - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
-      propertyPath: m_Intensity
-      value: 1.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
-      propertyPath: m_PointLightInnerAngle
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
-      propertyPath: m_PointLightOuterAngle
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
-      propertyPath: m_PointLightOuterRadius
-      value: 1.8979834
-      objectReference: {fileID: 0}
-    - target: {fileID: 8680561012025849977, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
-      propertyPath: m_Name
-      value: Light
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15813,6 +15785,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 746663562359129506, guid: eb05677d529b0f64885aef859b030c75, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659227024958295399, guid: eb05677d529b0f64885aef859b030c75, type: 3}
+      propertyPath: m_Intensity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7925235811140088972, guid: eb05677d529b0f64885aef859b030c75, type: 3}
