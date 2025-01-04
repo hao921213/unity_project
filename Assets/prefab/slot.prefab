@@ -248,6 +248,7 @@ MonoBehaviour:
   slot_image: {fileID: 5720420688033316756}
   slot_num: {fileID: 139874660323980857}
   item_in_slot: {fileID: 8871992522480963973}
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
 --- !u!1 &8871992522480963973
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +341,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3507531145837775255}
+        m_TargetAssemblyTypeName: slot, Assembly-CSharp
+        m_MethodName: onClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &357581799846946325
 MonoBehaviour:
   m_ObjectHideFlags: 0

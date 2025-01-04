@@ -17,8 +17,11 @@ public class bag_controller : MonoBehaviour
         }    
         instance=this;
     }
+    private void Start()
+    {
+        RefreshItem();
+    }
     void Update(){
-        // 檢查面板是否被激活
         if (ischange)
         {
             RefreshItem();
