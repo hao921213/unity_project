@@ -6,3 +6,4 @@ public class player1 : ScriptableObject
     public float health;
     public int money;
 }
+

@@ -9,7 +9,7 @@ public class time: MonoBehaviour
     void Update()
     {
         time1.count+=Time.deltaTime;
-        if(time1.count>=24){
+        if(time1.count>=6){
             time1.count=0;
             time1.hour+=1;
         }

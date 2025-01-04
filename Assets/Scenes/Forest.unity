@@ -85328,12 +85328,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 418276694427997783, guid: 3505a28350ae15c4f885ec2fcad852af, type: 3}
+      propertyPath: hp
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e8379af841db5344a10b97462880697, type: 2}
+    - target: {fileID: 418276694427997783, guid: 3505a28350ae15c4f885ec2fcad852af, type: 3}
       propertyPath: bag
       value: 
       objectReference: {fileID: 2008626519}
     - target: {fileID: 3327847467573048052, guid: 3505a28350ae15c4f885ec2fcad852af, type: 3}
       propertyPath: m_Mass
-      value: 0.0001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3327847467573048052, guid: 3505a28350ae15c4f885ec2fcad852af, type: 3}
       propertyPath: m_BodyType
@@ -85665,6 +85669,18 @@ PrefabInstance:
     - target: {fileID: 1419639644693156167, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
       propertyPath: m_Name
       value: enemy4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584636885451217918, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584636885451217918, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809780071743461465, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6249818407723204764, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
       propertyPath: m_LocalPosition.x

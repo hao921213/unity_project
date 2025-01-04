@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playercontroller : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class playercontroller : MonoBehaviour
 
     private Rigidbody2D rb; // 用於角色的剛體
     private Vector2 movement; // 儲存移動方向
+    public player1 hp;
 
     void Start()
     {
@@ -34,9 +36,21 @@ public class playercontroller : MonoBehaviour
     void Update()
     {
         openbag();
-        moveInput(); // 處理輸入
+        moveInput(); // 處理輸入  
     }
-
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "enemy1")
+        {
+            hp.health -= 1;
+            print(hp.health);
+            if (hp.health == 0)
+            {
+                SceneManager.LoadScene("Home");
+                hp.health = 10;
+            }
+        }
+    }
     void FixedUpdate()
     {
         TryMove(); // 嘗試移動玩家
@@ -142,8 +156,6 @@ public class playercontroller : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("與 " + collision.gameObject.name + " 碰撞！");
-    }
+    
+    
 }

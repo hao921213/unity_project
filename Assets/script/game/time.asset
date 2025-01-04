@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a999a7d50a94b94d89866819650bad9, type: 3}
   m_Name: time
   m_EditorClassIdentifier: 
-  count: 0
-  hour: 0
-  day: 0
+  count: 0.55150145
+  hour: 21
+  day: 3
