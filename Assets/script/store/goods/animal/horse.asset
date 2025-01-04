@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
   m_Name: horse
   m_EditorClassIdentifier: 
+  tag: animal
   item_name: horse
   item_image: {fileID: 75337923, guid: 2394f8a8e519ba64e9aa4974b5ffc588, type: 3}
   price: 10000
   held: 1
   iteminfo: 
+  prefab: {fileID: 0}

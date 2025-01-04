@@ -109,7 +109,7 @@ public class playercontroller : MonoBehaviour
 
     void openbag()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             isopen = !isopen;
             bag.SetActive(isopen);

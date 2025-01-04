@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
   m_Name: tomato
   m_EditorClassIdentifier: 
+  tag: crop
   item_name: tomato
   item_image: {fileID: 1807283792, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
   price: 0
   held: 1
   iteminfo: 
+  prefab: {fileID: 0}

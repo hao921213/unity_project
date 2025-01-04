@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
   m_Name: pig_l3
   m_EditorClassIdentifier: 
+  tag: animal
   item_name: pig_l3
   item_image: {fileID: -1792014262, guid: 706963e052c806c448479a4069917eea, type: 3}
   price: 200
   held: 1
   iteminfo: 
+  prefab: {fileID: 0}
