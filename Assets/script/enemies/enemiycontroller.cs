@@ -7,23 +7,42 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public Status status;
     public bool IsFaceRight;
     public enum Face { Left, Right};
+    //public enum Cow_Face { Left, Right};
     public Face face;
+    //public Cow_Face cow_face;
     public float speed;
     private Transform myTransform;
-    public Transform playerTransfrom;
+    private Transform playerTransfrom;
+    private SpriteRenderer spr;
+    public player1 hp;
+
     public float distance;
     void Start()
     {
-
-        //update
         status = Status.idle; //一開始是等待狀態
-        if (this.transform.GetComponent<SpriteRenderer>().flipX)
+
+        spr = this.transform.GetComponent<SpriteRenderer>();
+        if (spr.flipX)
         {
-            face = Face.Left;
+            if(this.transform.tag == "enemy1")
+            {
+                face = Face.Left;
+            }
+            else
+            {
+                face = Face.Right;
+            }
         }
         else
         {
-            face = Face.Right;
+            if (this.transform.tag == "enemy1")
+            {
+                face = Face.Right;
+            }
+            else
+            {
+                face = Face.Left;
+            }
         }
         myTransform = this.transform;
         playerTransfrom = GameObject.Find("player").transform;
@@ -54,11 +73,27 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 {
                     if (myTransform.position.x >= playerTransfrom.position.x)
                     {
-                        face = Face.Left;
+                        spr.flipX = true;
+                        if (this.transform.tag == "enemy1")
+                        {
+                            face = Face.Left;
+                        }
+                        else
+                        {
+                            face = Face.Right;
+                        }
                     }
                     else
                     {
-                        face = Face.Right;
+                        spr.flipX = false;
+                        if (this.transform.tag == "enemy1")
+                        {
+                            face = Face.Right;
+                        }
+                        else
+                        {
+                            face = Face.Left;
+                        }
                     }
                 }
                 switch (face)
@@ -83,7 +118,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
                             myTransform.position += new Vector3(speed * deltaTime, speed * deltaTime, 0);
                         }
                         break;
-
                 }
                 break;
         }

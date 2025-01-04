@@ -122,6 +122,9 @@ public class playercontroller : MonoBehaviour
         gofarm(coll);
         gopath(coll);
         gohome(coll);
+        goGarden(coll);
+        gofishing(coll);
+        gosforest(coll);
     }
 
     void goshop(Collider2D coll)
@@ -129,6 +132,30 @@ public class playercontroller : MonoBehaviour
         if (coll.gameObject.tag == "shop_Portal")
         {
             coll.gameObject.GetComponent<shop_Portal>().ChangeScene_shop();
+        }
+    }
+
+    void gosforest(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "forest_Portal")
+        {
+            coll.gameObject.GetComponent<forest_Prtal>().ChangeScene_forest();
+        }
+    }
+
+    void gofishing(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "fishing_Portal")
+        {
+            coll.gameObject.GetComponent<fishing_Portal>().ChangeScene_fish();
+        }
+    }
+
+    void goGarden(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "Garden_Portal")
+        {
+            coll.gameObject.GetComponent<Garden_Portal>().ChangeScene_Garden();
         }
     }
 

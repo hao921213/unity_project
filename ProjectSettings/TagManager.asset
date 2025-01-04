@@ -12,6 +12,8 @@ TagManager:
   - cave_Portal
   - forest_Portal
   - enemy1
+  - Garden_Portal
+  - fishing_Portal
   layers:
   - Default
   - TransparentFX
