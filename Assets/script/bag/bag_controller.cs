@@ -37,18 +37,23 @@ public class bag_controller : MonoBehaviour
     // }
     public static void RefreshItem(){
         for(int i=0;i<instance.slot_grid.transform.childCount;i++){
-            if(instance.slot_grid.transform.childCount==0){
-                break;
-            }
             Destroy(instance.slot_grid.transform.GetChild(i).gameObject);
-            instance.slots.Clear();
         }
-        for(int i=0;i<instance.player_bag.itemlist.Count;i++){
-            // CreateNewItem(instance.player_bag.itemlist[i]);
-            instance.slots.Add(Instantiate(instance.empty_slot));
-            instance.slots[i].transform.SetParent(instance.slot_grid.transform); 
-            instance.slots[i].GetComponent<slot>().slot_id=i;
-            instance.slots[i].GetComponent<slot>().SetupSlot(instance.player_bag.itemlist[i]);
+        instance.slots.Clear();
+        for (int i = 0; i < instance.player_bag.itemlist.Count; i++) {
+            GameObject newSlot = Instantiate(instance.empty_slot);
+            newSlot.transform.SetParent(instance.slot_grid.transform);
+            slot slotComponent = newSlot.GetComponent<slot>();
+
+            slotComponent.slot_id = i;
+            if (instance.player_bag.itemlist[i]?.held > 0) {
+                slotComponent.SetupSlot(instance.player_bag.itemlist[i]);
+            } else {
+                instance.player_bag.itemlist[i] = null; // 清除無效物品
+                slotComponent.SetupSlot(null); // 重置格子
+            }
+
+            instance.slots.Add(newSlot);
         }
     }
     static public void change(){

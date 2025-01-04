@@ -85,6 +85,7 @@ public class store_controller : MonoBehaviour
     }
     private void Buy()
     {
+        int has;
         if (selectedItem == null)
         {
             Debug.LogWarning("沒有選中商品！");
@@ -96,27 +97,31 @@ public class store_controller : MonoBehaviour
         // 檢查玩家金錢是否足夠
         if (player.money >= itemPrice)
         {
-            // 扣除金錢
-            player.money -= itemPrice;
-            player_money_Text.text = player.money.ToString();
             // 將商品加入玩家背包
             foreach(item item in player_bag.itemlist){
                 if(item!=null && item.item_name==selectedItem.item_name){
                     item.held += 1;
                     Debug.Log($"購買成功: {selectedItem.item_name}");
                     bag_controller.change();
+                    // 扣除金錢
+                    player.money -= itemPrice;
+                    player_money_Text.text = player.money.ToString();
                     return;
                 }
             }
             // 如果玩家背包沒有該物品，添加新物品
-            for(int i=0;i<player_bag.itemlist.Count;i++){
+            for(int i=0;i<16;i++){
                 if(player_bag.itemlist[i]==null){
                     player_bag.itemlist[i]=selectedItem;
                     Debug.Log($"購買成功: {selectedItem.item_name}");
                     bag_controller.change();
+                    // 扣除金錢
+                    player.money -= itemPrice;
+                    player_money_Text.text = player.money.ToString();
                     return;
                 }
             }
+            Debug.Log("背包已滿");
         }
         else
         {

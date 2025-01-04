@@ -17082,6 +17082,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbe3e1ca7d432d04db716c84b2fc8f72, type: 3}
+--- !u!1 &183321239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 183321240}
+  m_Layer: 0
+  m_Name: right
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &183321240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183321239}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.04, y: 6.45, z: -0.059059348}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &229530052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17408,6 +17439,7 @@ PrefabInstance:
     - {fileID: 7363846132122192653, guid: 36b9a9fd93e4a6d49ac169a6f0c628d8, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5618205571155433085, guid: 36b9a9fd93e4a6d49ac169a6f0c628d8, type: 3}
+    - {fileID: 8160842229133515453, guid: 36b9a9fd93e4a6d49ac169a6f0c628d8, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8823549264724509796, guid: 36b9a9fd93e4a6d49ac169a6f0c628d8, type: 3}
       insertIndex: -1
@@ -25758,6 +25790,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &678931691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678931692}
+  m_Layer: 0
+  m_Name: left
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &678931692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678931691}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.65, y: 2.42, z: -0.059059348}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &685122404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27236,11 +27299,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   farm: {fileID: 11400000, guid: c8a6ba9c6e683d148b733587a1fa1efc, type: 2}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
+  empty: {fileID: 11400000, guid: d552f2872b919894caaf9af16648a724, type: 2}
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   text: {fileID: 719144752}
   animal_image: {fileID: 763611731}
   slot_prefab: {fileID: 3673538897825761819, guid: 36b9a9fd93e4a6d49ac169a6f0c628d8, type: 3}
   slot_grid: {fileID: 256456049}
+  right: {fileID: 183321240}
+  left: {fileID: 678931692}
 --- !u!1 &1823405419
 GameObject:
   m_ObjectHideFlags: 0
@@ -34676,3 +34742,5 @@ SceneRoots:
   - {fileID: 1681161326}
   - {fileID: 748743916}
   - {fileID: 578006515}
+  - {fileID: 183321240}
+  - {fileID: 678931692}

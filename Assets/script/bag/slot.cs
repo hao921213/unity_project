@@ -14,6 +14,7 @@ public class slot : MonoBehaviour
             item_in_slot.SetActive(false);
             return;
         }
+        item_in_slot.SetActive(true);
         slot_item=item;
         slot_image.sprite=item.item_image;
         slot_num.text=item.held.ToString();

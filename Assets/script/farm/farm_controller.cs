@@ -6,18 +6,27 @@ public class farm_controller : MonoBehaviour
 {
     public bag farm;
     public bag player_bag;
+    public item empty;
     public hand_take hand;
     public Text text;
     public Image animal_image; 
     public GameObject slot_prefab;
     public GameObject slot_grid;
+    public Transform right;
+    public Transform left;
     private item selectedanimal;
     private List<GameObject> slots = new List<GameObject>(); 
+    private int has=1;
     private void Update(){
         update_hand_slot();
     }
     private void Start(){
         update_animal_slot();
+        if(has==1){
+            update_animal();
+            Debug.Log("新增成功");
+            has=0;
+        }
     }
     public void update_hand_slot(){
         if(hand.item!=null && hand.item.tag=="animal"){
@@ -39,6 +48,16 @@ public class farm_controller : MonoBehaviour
             farm_slot slotComponent = newSlot.GetComponent<farm_slot>();
             slotComponent.SetupSlot(farm.itemlist[i]);
             slots.Add(newSlot);
+            has=1;
+        }
+    }
+
+    public void update_animal(){
+        for(int i=0;i<farm.itemlist.Count;i++){
+            if(farm.itemlist[i]!=null){
+                Instantiate(farm.itemlist[i].prefab,new Vector3(Random.Range(left.position.x,right.position.x
+                ), Random.Range(left.position.y,right.position.y), 0), Quaternion.identity);
+            }
         }
     }
     public void push(){
@@ -63,23 +82,27 @@ public class farm_controller : MonoBehaviour
         }
     }
     public void get(){
-        if(player_bag.itemlist.Count<17){
-            foreach(item item in player_bag.itemlist){
-                if(item!=null && item.item_name==selectedanimal.item_name){
-                    item.held += 1;
-                    Debug.Log($"購買成功: {selectedanimal.item_name}");
-                    bag_controller.change();
-                    return;
-                }
+        foreach(item item in player_bag.itemlist){
+            if(item!=null && item==selectedanimal){
+                item.held += 1;
+                Debug.Log($"成功: {selectedanimal.item_name}");
+                farm.itemlist.Remove(selectedanimal);
+                farm.itemlist.Add(empty);
+                bag_controller.change();
+                update_animal_slot();
+                return;
             }
-            // 如果玩家背包沒有該物品，添加新物品
-            for(int i=0;i<player_bag.itemlist.Count;i++){
-                if(player_bag.itemlist[i]==null){
-                    player_bag.itemlist[i]=selectedanimal;
-                    Debug.Log($"購買成功: {selectedanimal.item_name}");
-                    bag_controller.change();
-                    return;
-                }
+        }
+        // 如果玩家背包沒有該物品，添加新物品
+        for(int i=0;i<16;i++){
+            if(player_bag.itemlist[i]==null && selectedanimal!=null){
+                player_bag.itemlist[i]=selectedanimal;
+                Debug.Log($"成功: {selectedanimal.item_name}");
+                farm.itemlist.Remove(selectedanimal);
+                farm.itemlist.Add(empty);
+                bag_controller.change();
+                update_animal_slot();
+                return;
             }
         }
     }

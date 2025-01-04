@@ -16,6 +16,6 @@ MonoBehaviour:
   item_name: sheep_l5
   item_image: {fileID: 599095560, guid: 6424c645ca77a6d40b86dbf0c861b431, type: 3}
   price: 0
-  held: 4
+  held: 1
   iteminfo: 
   prefab: {fileID: 0}
