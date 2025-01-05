@@ -10,15 +10,14 @@ public class playercontroller : MonoBehaviour
 
     private bool isopen;
     private Vector3 originalScale; 
-    public int money;
 
     private Rigidbody2D rb; // 用於角色的剛體
     private Vector2 movement; // 儲存移動方向
     public player1 hp;
+    public health_bar health_change;
 
     void Start()
     {
-        money = 0;
         isopen = false;
         bag.SetActive(isopen);
         originalScale = transform.localScale;
@@ -42,7 +41,7 @@ public class playercontroller : MonoBehaviour
     {
         if (collision.gameObject.tag == "enemy1")
         {
-            hp.health -= 1;
+            health_change.TakeDamage(1);
             print(hp.health);
             if (hp.health == 0)
             {

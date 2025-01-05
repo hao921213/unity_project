@@ -11,6 +11,7 @@ public class health_bar : MonoBehaviour
     {
         UpdateHealthBar();
     }
+    
 
     // ��s��q
     public void TakeDamage(float damage)
