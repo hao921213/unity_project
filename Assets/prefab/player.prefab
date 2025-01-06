@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2236202387319032152}
   - component: {fileID: 1213792308426659365}
   - component: {fileID: 3836429824433402287}
+  - component: {fileID: 8388285232907759109}
   m_Layer: 7
   m_Name: ani
   m_TagString: Untagged
@@ -110,6 +111,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8388285232907759109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3346759010381372670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5720cabec03bb44385c4c8cd9c8018b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3836429824433402287}
 --- !u!1 &9177966639341387431
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,5 +306,6 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 64
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   hp: {fileID: 11400000, guid: 7e8379af841db5344a10b97462880697, type: 2}
   health_change: {fileID: 0}

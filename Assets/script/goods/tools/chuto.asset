@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
   m_Name: chuto
   m_EditorClassIdentifier: 
+  tag: 
   item_name: 
   item_image: {fileID: 659059723, guid: d96238aedd3f22c43a162b8f78ebc1e3, type: 3}
   price: 0
-  held: 0
+  held: 1
   iteminfo: 
+  prefab: {fileID: 0}

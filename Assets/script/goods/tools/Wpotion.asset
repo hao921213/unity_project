@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
   m_Name: Wpotion
   m_EditorClassIdentifier: 
+  tag: 
   item_name: 
   item_image: {fileID: -1419095664, guid: 8280fb0419376c24c976a2cbf27ac05d, type: 3}
   price: 0
-  held: 0
+  held: 1
   iteminfo: 
+  prefab: {fileID: 0}

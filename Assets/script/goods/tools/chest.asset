@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
-  m_Name: arrow
+  m_Name: chest
   m_EditorClassIdentifier: 
   tag: 
-  item_name: 
-  item_image: {fileID: 896295810, guid: d96238aedd3f22c43a162b8f78ebc1e3, type: 3}
-  price: 0
+  item_name: chest
+  item_image: {fileID: 337032105, guid: 0fb3e78572f02624ab8a9ca0db2921d9, type: 3}
+  price: 1000
   held: 1
   iteminfo: 
   prefab: {fileID: 0}

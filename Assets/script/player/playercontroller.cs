@@ -7,6 +7,7 @@ public class playercontroller : MonoBehaviour
     public Animator animator;    // 動畫控制器
     public GameObject bag;
     public LayerMask obstacleLayer; // 障礙物的圖層，用於檢測
+    public hand_take hand;
 
     private bool isopen;
     private Vector3 originalScale; 
@@ -15,6 +16,7 @@ public class playercontroller : MonoBehaviour
     private Vector2 movement; // 儲存移動方向
     public player1 hp;
     public health_bar health_change;
+    private int direction=0;
 
     void Start()
     {
@@ -36,6 +38,7 @@ public class playercontroller : MonoBehaviour
     {
         openbag();
         moveInput(); // 處理輸入  
+        use();
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -63,22 +66,26 @@ public class playercontroller : MonoBehaviour
             movement.x = 1f;
             transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
             animator.SetInteger("Status", 1);
+            direction=3;
         }
         else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) // 左
         {
             movement.x = -1f;
             transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
+            direction=1;
             animator.SetInteger("Status", 1);
         }
         else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) // 上
         {
             movement.y = 1f;
             animator.SetInteger("Status", 2);
+            direction=2;
         }
         else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) // 下
         {
             movement.y = -1f;
             animator.SetInteger("Status", 3);
+            direction=0;
         }
         else
         {
@@ -182,6 +189,53 @@ public class playercontroller : MonoBehaviour
         }
     }
 
+    public void use(){
+        if(Input.GetKeyDown(KeyCode.E) && hand.item==null){
+            attack();
+        }
+        else if(Input.GetKeyDown(KeyCode.E) && hand.item.item_name=="sword"){
+            attack();    
+        }
+    } 
     
+    void attack(){
+        if(hand.item==null){
+            
+            switch(direction){
+                case 0:
+                    animator.SetInteger("onattack",0);
+                    break;
+                case 1:
+                    transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
+                    animator.SetInteger("onattack",3);
+                    break;
+                case 2:
+                    animator.SetInteger("onattack",2);
+                    break;
+                case 3:
+                    transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
+                    animator.SetInteger("onattack",3);
+                    break;
+            }
+        }
+        else if(hand.item.item_name=="sword"){
+            switch(direction){
+                case 0:
+                    animator.SetInteger("sword",0);
+                    break;
+                case 1:
+                    transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
+                    animator.SetInteger("sword",3);
+                    break;
+                case 2:
+                    animator.SetInteger("sword",2);
+                    break;
+                case 3:
+                    transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
+                    animator.SetInteger("sword",3);
+                    break;
+            }
+        }
+    }
     
 }

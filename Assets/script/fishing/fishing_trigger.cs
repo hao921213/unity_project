@@ -36,7 +36,7 @@ public class fishing_trigger : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         if (horizontal != 0 || vertical != 0)
         {
-            player.animator.SetInteger("onfishing",0);
+            player.animator.SetInteger("onfishing",3);
         }
         else if (isPlayerInArea && Input.GetKeyDown(KeyCode.E) && hand.item.item_name=="fishing_rod")
         {

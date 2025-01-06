@@ -24,4 +24,7 @@ public class slot : MonoBehaviour
             hand.item=slot_item;
         }
     }
+    public void cancel_btn(){
+        hand.item=null;
+    }
 }
