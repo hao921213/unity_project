@@ -93,8 +93,6 @@ public class Fishing : MonoBehaviour
                     fish_game4.SetActive(true);
                     fish_game5.SetActive(true);
                     currentItem = null;
-                    player.animator.SetInteger("onfishing",0);
-                    have_fish=1;
                     return;
                 }
 
@@ -102,11 +100,13 @@ public class Fishing : MonoBehaviour
                 if (destroyTimer > 1f)
                 {
                     Debug.Log("Item destroyed due to timeout!");
-                    player.animator.SetInteger("onfishing",0);
-                    have_fish=1;
+                    player.animator.SetInteger("onfishing",3);
                     Destroy(currentItem);
                 }
             }
         }
+    }
+    public void finish_fish(){
+        player.animator.SetInteger("onfishing",3);
     }
 }

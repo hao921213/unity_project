@@ -8,6 +8,7 @@ public class Fishing_game : MonoBehaviour
     public GameObject red;           // 紅色得分區
     public GameObject green;         // 綠色得分區
     public GameObject yellow;        // 黃色得分區
+    public Fishing fishing;
 
     private float minY;              // BoxCollider 的最小 y
     private float maxY;              // BoxCollider 的最大 y
@@ -20,6 +21,7 @@ public class Fishing_game : MonoBehaviour
 
     private bool isMoving;           // 浮標是否在移動
     private float timeCounter = 0f;
+
 
     void Start()
     {
@@ -128,6 +130,7 @@ public class Fishing_game : MonoBehaviour
         yellow.SetActive(false);
         green.SetActive(false);
         gameObject.SetActive(false);
+        fishing.finish_fish();
         return;
     }
 

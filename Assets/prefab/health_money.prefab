@@ -174,6 +174,7 @@ MonoBehaviour:
   hand_Take: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   held: {fileID: 7461050926491664354}
   image: {fileID: 4913472488050842680}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &299043825107878484
 GameObject:
   m_ObjectHideFlags: 0
