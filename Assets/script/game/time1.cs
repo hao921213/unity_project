@@ -4,6 +4,7 @@ using UnityEngine;
 public class time1 : ScriptableObject
 {
     public float count;
-    public int hour;
+    public int hour = 8;
     public int day;
+    public float intensity = 0.9f;
 }
