@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5809780071743461465}
   - component: {fileID: 1584636885451217918}
   - component: {fileID: 3197469777957183312}
+  - component: {fileID: 386545076176513786}
   m_Layer: 0
   m_Name: enemy4
   m_TagString: enemy1
@@ -148,7 +149,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000000
+  m_Mass: 1
   m_LinearDamping: 50
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -162,7 +163,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 4
 --- !u!114 &3197469777957183312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,6 +179,28 @@ MonoBehaviour:
   status: 0
   IsFaceRight: 0
   face: 0
-  speed: 2
-  playerTransfrom: {fileID: 0}
-  distance: 8
+  speed: 1.1
+  hp: {fileID: 0}
+  distance: 2
+--- !u!95 &386545076176513786
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419639644693156167}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad098066d129b3046a62ee7846b285a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

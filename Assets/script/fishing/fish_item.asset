@@ -10,24 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 868a42cfa3820ba4892ab612f6809529, type: 3}
-  m_Name: player_bag
+  m_Name: fish_item
   m_EditorClassIdentifier: 
   itemlist:
-  - {fileID: 11400000, guid: 3a9d92699ce80714b82cce46b6ae5ed1, type: 2}
+  - {fileID: 11400000, guid: 55b680dc391c50c4ea95244268db1f38, type: 2}
   - {fileID: 11400000, guid: fc33ae034ab54ec44a93a012eba9f694, type: 2}
   - {fileID: 11400000, guid: 8ce9e9eafbca4cf4f9d1d518caccd77b, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 11400000, guid: d32decbd2b0901947a71497f857d0416, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 15b3f48f2f5a47546b72199e586aa478, type: 2}
   - {fileID: 11400000, guid: ab3f90e6ef1b52e448a0396df4570ede, type: 2}
+  - {fileID: 11400000, guid: 9d3c68c89b088b044b46a7ba87e59a05, type: 2}
+  - {fileID: 11400000, guid: b8f282878a826024abba5f60c48d5d0c, type: 2}
+  - {fileID: 11400000, guid: 1a2c4f96c172d4c41a2ae7cef440c9ce, type: 2}

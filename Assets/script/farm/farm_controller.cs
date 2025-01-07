@@ -16,17 +16,13 @@ public class farm_controller : MonoBehaviour
     public Transform left;
     private item selectedanimal;
     private List<GameObject> slots = new List<GameObject>(); 
+    private List<GameObject> animals = new List<GameObject>();
     private int has=1;
     private void Update(){
         update_hand_slot();
     }
     private void Start(){
         update_animal_slot();
-        if(has==1){
-            update_animal();
-            Debug.Log("新增成功");
-            has=0;
-        }
     }
     public void update_hand_slot(){
         if(hand.item!=null && hand.item.tag=="animal"){
@@ -48,15 +44,19 @@ public class farm_controller : MonoBehaviour
             farm_slot slotComponent = newSlot.GetComponent<farm_slot>();
             slotComponent.SetupSlot(farm.itemlist[i]);
             slots.Add(newSlot);
-            has=1;
         }
     }
 
     public void update_animal(){
+        foreach (var animal in animals)
+        {
+            Destroy(animal);
+        }
         for(int i=0;i<farm.itemlist.Count;i++){
             if(farm.itemlist[i]!=null){
-                Instantiate(farm.itemlist[i].prefab,new Vector3(Random.Range(left.position.x,right.position.x
+                GameObject new_animal=Instantiate(farm.itemlist[i].prefab,new Vector3(Random.Range(left.position.x,right.position.x
                 ), Random.Range(left.position.y,right.position.y), 0), Quaternion.identity);
+                animals.Add(new_animal);
             }
         }
     }
@@ -67,6 +67,7 @@ public class farm_controller : MonoBehaviour
                     if(farm.itemlist[i].tag=="none"){
                         farm.itemlist[i]=hand.item;
                         update_animal_slot();
+                        update_animal();
                         break;
                     }
                 }
@@ -90,6 +91,7 @@ public class farm_controller : MonoBehaviour
                 farm.itemlist.Add(empty);
                 bag_controller.change();
                 update_animal_slot();
+                update_animal();
                 return;
             }
         }
@@ -102,6 +104,7 @@ public class farm_controller : MonoBehaviour
                 farm.itemlist.Add(empty);
                 bag_controller.change();
                 update_animal_slot();
+                update_animal();
                 return;
             }
         }

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
-  m_Name: chicken_l3
+  m_Name: fish4
   m_EditorClassIdentifier: 
-  tag: animal
-  item_name: chicken_l3
-  item_image: {fileID: 1812317717, guid: a91bfd68c501c394c93b1d1843ad8bda, type: 3}
-  price: 30
+  tag: 
+  item_name: 
+  item_image: {fileID: -1237256335, guid: 338eb9325b511bf4dbf0184fff5f5d9c, type: 3}
+  price: 0
   held: 1
-  iteminfo: "\u70CF\u9AA8"
-  prefab: {fileID: 165068887507307032, guid: acb9e776047e80a4087dc1604963163c, type: 3}
+  iteminfo: 
+  prefab: {fileID: 0}

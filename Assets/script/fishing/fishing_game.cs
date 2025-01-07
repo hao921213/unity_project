@@ -9,6 +9,8 @@ public class Fishing_game : MonoBehaviour
     public GameObject green;         // 綠色得分區
     public GameObject yellow;        // 黃色得分區
     public Fishing fishing;
+    public bag fish_item;
+    public bag player_bag;
 
     private float minY;              // BoxCollider 的最小 y
     private float maxY;              // BoxCollider 的最大 y
@@ -110,20 +112,30 @@ public class Fishing_game : MonoBehaviour
 
     void CalculateScore()
     {
+        int get=-1;
         if (transform.position.y <= green_maxY && transform.position.y >= green_minY)
         {
             Debug.Log("green");
+            get=Random.Range(0,7);
+            player_get(fish_item.itemlist[get]);
+
         }
         else if (transform.position.y <= red_maxY && transform.position.y >= red_minY)
         {
             Debug.Log("red");
+            get=Random.Range(0,7);
+            player_get(fish_item.itemlist[get]);
         }
         else if (transform.position.y <= yellow_maxY && transform.position.y >= yellow_minY)
         {
             Debug.Log("yellow");
+            get=Random.Range(0,7);
+            player_get(fish_item.itemlist[get]);
         }
         else{
             Debug.Log("white");
+            get=Random.Range(0,7);
+            player_get(fish_item.itemlist[get]);
         }
         box.SetActive(false);
         red.SetActive(false);
@@ -131,6 +143,32 @@ public class Fishing_game : MonoBehaviour
         green.SetActive(false);
         gameObject.SetActive(false);
         fishing.finish_fish();
+        return;
+    }
+
+    void player_get(item item){
+        Debug.Log(item);
+        int full=-1;
+        for(int i=0;i<player_bag.itemlist.Count;i++){
+            if(player_bag.itemlist[i]==item){
+                player_bag.itemlist[i].held++;
+                bag_controller.RefreshItem();
+                return;
+            }
+        }
+        for(int i=0;i<player_bag.itemlist.Count;i++){
+            if(player_bag.itemlist[i]==null){
+                full=i;
+                break;
+            }
+        }
+        if(full!=-1){
+            player_bag.itemlist[full]=item;
+            bag_controller.RefreshItem();
+        }
+        else{
+            Debug.Log("背包已滿");
+        }
         return;
     }
 

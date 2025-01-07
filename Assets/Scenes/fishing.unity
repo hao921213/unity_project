@@ -1358,7 +1358,7 @@ Transform:
   m_GameObject: {fileID: 417739680}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.1542, y: -2.08, z: 0}
+  m_LocalPosition: {x: 4.1542, y: -2.299, z: 0}
   m_LocalScale: {x: 0.3516003, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3617,6 +3617,8 @@ MonoBehaviour:
   green: {fileID: 752661205}
   yellow: {fileID: 1563046274}
   fishing: {fileID: 1312853990}
+  fish_item: {fileID: 11400000, guid: c9f328480ac6c5e4daae3ab6ee197525, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1001 &1321604858
 PrefabInstance:
   m_ObjectHideFlags: 0
