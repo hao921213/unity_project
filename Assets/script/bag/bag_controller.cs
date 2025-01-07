@@ -14,6 +14,7 @@ public class bag_controller : MonoBehaviour
     public Button change_btn;
     public Button sell_btn;
     public hand_take hand;
+    public player1 player1;
     static bool ischange = false;
     void Awake() {
         if(instance!=null){
@@ -48,7 +49,6 @@ public class bag_controller : MonoBehaviour
             } else {
                 if(instance.player_bag.itemlist[i]!=null){
                     instance.player_bag.itemlist[i].held=1;
-                    
                 }
                 instance.player_bag.itemlist[i] = null; // 清除無效物品
                 slotComponent.SetupSlot(null); // 重置格子
@@ -73,6 +73,10 @@ public class bag_controller : MonoBehaviour
     public void sell(){
         if(hand.item!=null){
             hand.item.held-=1;
+            player1.money+=(hand.item.price-100);
+            if(hand.item.held==0){
+                hand.item=null;
+            }
             RefreshItem();
         }
     }

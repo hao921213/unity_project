@@ -15,7 +15,7 @@ MonoBehaviour:
   tag: animal
   item_name: horse
   item_image: {fileID: 75337923, guid: 2394f8a8e519ba64e9aa4974b5ffc588, type: 3}
-  price: 10000
+  price: 1000
   held: 1
   iteminfo: 
   prefab: {fileID: 0}

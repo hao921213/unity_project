@@ -15,7 +15,7 @@ MonoBehaviour:
   tag: 
   item_name: 
   item_image: {fileID: -1047384466, guid: 338eb9325b511bf4dbf0184fff5f5d9c, type: 3}
-  price: 0
+  price: 100
   held: 1
   iteminfo: 
   prefab: {fileID: 0}

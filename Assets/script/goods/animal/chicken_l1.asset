@@ -15,7 +15,7 @@ MonoBehaviour:
   tag: animal
   item_name: chicken_l1
   item_image: {fileID: 2117401228, guid: 8e76c0e20ef59ed4e8a88d4af0429552, type: 3}
-  price: 10
+  price: 1000
   held: 1
   iteminfo: "\u72D7\u72D7\u7D66"
   prefab: {fileID: 5855462166584738365, guid: baa6bedc9b907c4489dc9756a4caba93, type: 3}

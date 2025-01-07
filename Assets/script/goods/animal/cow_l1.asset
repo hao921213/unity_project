@@ -18,4 +18,4 @@ MonoBehaviour:
   price: 1000
   held: 1
   iteminfo: "\u6BDB"
-  prefab: {fileID: 0}
+  prefab: {fileID: 7197565117110475285, guid: 60e0d26dc1d117a42bed9b45788b2766, type: 3}

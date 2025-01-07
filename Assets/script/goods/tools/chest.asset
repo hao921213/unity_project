@@ -15,7 +15,7 @@ MonoBehaviour:
   tag: 
   item_name: chest
   item_image: {fileID: 337032105, guid: 0fb3e78572f02624ab8a9ca0db2921d9, type: 3}
-  price: 1000
+  price: 100
   held: 1
   iteminfo: 
   prefab: {fileID: 0}

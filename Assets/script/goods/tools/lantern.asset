@@ -15,7 +15,7 @@ MonoBehaviour:
   tag: 
   item_name: lantern
   item_image: {fileID: 688636416, guid: d96238aedd3f22c43a162b8f78ebc1e3, type: 3}
-  price: 0
+  price: 100
   held: 1
   iteminfo: 
   prefab: {fileID: 0}

@@ -13,13 +13,8 @@ MonoBehaviour:
   m_Name: player_bag
   m_EditorClassIdentifier: 
   itemlist:
-  - {fileID: 11400000, guid: 3a9d92699ce80714b82cce46b6ae5ed1, type: 2}
-  - {fileID: 11400000, guid: fc33ae034ab54ec44a93a012eba9f694, type: 2}
-  - {fileID: 11400000, guid: 8ce9e9eafbca4cf4f9d1d518caccd77b, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 11400000, guid: d32decbd2b0901947a71497f857d0416, type: 2}
+  - {fileID: 11400000, guid: 84dc51939531d3349830b1cc41a6c062, type: 2}
+  - {fileID: 11400000, guid: 7b7d8085253326f4cb03fd670e2b220a, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -30,4 +25,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 11400000, guid: ab3f90e6ef1b52e448a0396df4570ede, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
