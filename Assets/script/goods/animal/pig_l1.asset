@@ -19,3 +19,4 @@ MonoBehaviour:
   held: 1
   iteminfo: "\u72D7"
   prefab: {fileID: 0}
+  water: 5

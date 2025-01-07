@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: waters
   m_EditorClassIdentifier: 
   waters:
-  - 800
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 984
+  - 1000
+  - 984
+  - 996
+  - 1000
+  - 1000

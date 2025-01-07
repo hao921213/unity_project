@@ -11,4 +11,5 @@ public class item : ScriptableObject
     [TextArea]
     public string iteminfo;
     public GameObject prefab;
+    public int water;
 }

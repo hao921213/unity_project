@@ -14,10 +14,14 @@ public class farm_controller : MonoBehaviour
     public GameObject slot_grid;
     public Transform right;
     public Transform left;
+    public water_controller all_waters;
+    public int index;
+    public time1 time;
     private item selectedanimal;
     private List<GameObject> slots = new List<GameObject>(); 
     private List<GameObject> animals = new List<GameObject>();
     private int has=1;
+    private int change;
     private void Update(){
         update_hand_slot();
     }

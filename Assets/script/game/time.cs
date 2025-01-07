@@ -9,16 +9,16 @@ public class time: MonoBehaviour
     public Text text;
     public time1 time1;
     private float count;
-    public float maxIntensity = 1.0f;  // 最大光照強度
-    public float minIntensity = 0.003f;  // 最小光照強度
-    public int morning = 3;         //3.變亮
-    public int evening = 18;        //18.變暗
-    public float change1 = 0.0001f; // 光照變強速度
-    public float change2 = 0.0002f; // 光照變若速度
+    public float maxIntensity = 1.0f;  // 嚙諒大嚙踝蕭嚙諉強嚙踝蕭
+    public float minIntensity = 0.003f;  // 嚙諒小嚙踝蕭嚙諉強嚙踝蕭
+    public int morning = 3;         //3.嚙豌亮
+    public int evening = 18;        //18.嚙豌暗
+    public float change1 = 0.0001f; // 嚙踝蕭嚙踝蕭嚙豌強嚙緣嚙踝蕭
+    public float change2 = 0.0002f; // 嚙踝蕭嚙踝蕭嚙豌若嚙緣嚙踝蕭
     void Update()
     {
         time1.count+=Time.deltaTime;
-        if(time1.count>=6){
+        if(time1.count>=24){
             time1.count=0;
             time1.hour+=1;
         }
@@ -28,7 +28,7 @@ public class time: MonoBehaviour
         }
         text.text=$"Day:{time1.day} Hour:{time1.hour}";
 
-        //光線
+        //嚙踝蕭嚙線
         if (time1.hour > morning && time1.hour < evening)
         {
             if (time1.intensity < maxIntensity)
