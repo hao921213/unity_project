@@ -19,3 +19,4 @@ MonoBehaviour:
   held: 1
   iteminfo: 
   prefab: {fileID: 4992874290401187637, guid: fbfc125feafdffe41bfea6757632d933, type: 3}
+  water: 9

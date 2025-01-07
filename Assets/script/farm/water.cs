@@ -10,6 +10,9 @@ public class water : MonoBehaviour
     public float maxWater=1000;
     private void Update()
     {
+        update_water();
+    }
+    public void update_water(){
         float water=all_water.waters[index];
         scrollbar.value = Mathf.Clamp01(water / maxWater);
         text.text=water.ToString()+"/1000";
