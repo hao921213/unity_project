@@ -15,7 +15,7 @@ MonoBehaviour:
   tag: animal
   item_name: pig_l1
   item_image: {fileID: -330711141, guid: 0d47530f809898c4c8d603803577d780, type: 3}
-  price: 50
+  price: 1000
   held: 1
   iteminfo: "\u72D7"
   prefab: {fileID: 0}
