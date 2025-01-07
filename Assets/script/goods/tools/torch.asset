@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: torch
   m_EditorClassIdentifier: 
   tag: 
-  item_name: 
+  item_name: torch
   item_image: {fileID: -801039063, guid: d96238aedd3f22c43a162b8f78ebc1e3, type: 3}
   price: 0
   held: 1

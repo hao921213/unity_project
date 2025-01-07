@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4251654112591880003}
   - component: {fileID: 6049581377875498418}
+  - component: {fileID: 6080272197720750329}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -49,7 +50,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.697
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.97
+  m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 0000000015dfe29207a1a771077455d52d53173f
@@ -84,6 +85,19 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &6080272197720750329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331445817798700262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb93fd541c8a63488eae4add99cd491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
 --- !u!1 &3346759010381372670
 GameObject:
   m_ObjectHideFlags: 0
