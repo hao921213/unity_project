@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class bag_controller : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class bag_controller : MonoBehaviour
     // public slot slotprefab;
     public GameObject empty_slot;
     public  List<GameObject> slots=new List<GameObject>();
+    public Button change_btn;
+    public Button sell_btn;
+    public hand_take hand;
     static bool ischange = false;
     void Awake() {
         if(instance!=null){
@@ -28,13 +32,6 @@ public class bag_controller : MonoBehaviour
             ischange=false;   
         }
     }
-    // public static void CreateNewItem(item item){
-    //     slot newItem=Instantiate(instance.slotprefab,instance.slot_grid.transform.position,Quaternion.identity);
-    //     newItem.gameObject.transform.SetParent(instance.slot_grid.transform);
-    //     newItem.slot_item=item;
-    //     newItem.slot_image.sprite=item.item_image;
-    //     newItem.slot_num.text=item.held.ToString();
-    // }
     public static void RefreshItem(){
         for(int i=0;i<instance.slot_grid.transform.childCount;i++){
             Destroy(instance.slot_grid.transform.GetChild(i).gameObject);
@@ -49,6 +46,10 @@ public class bag_controller : MonoBehaviour
             if (instance.player_bag.itemlist[i]?.held > 0) {
                 slotComponent.SetupSlot(instance.player_bag.itemlist[i]);
             } else {
+                if(instance.player_bag.itemlist[i]!=null){
+                    instance.player_bag.itemlist[i].held=1;
+                    
+                }
                 instance.player_bag.itemlist[i] = null; // 清除無效物品
                 slotComponent.SetupSlot(null); // 重置格子
             }
@@ -58,5 +59,21 @@ public class bag_controller : MonoBehaviour
     }
     static public void change(){
         ischange=true;
+    }
+    public void can_change(){
+        change_btn.interactable=true;
+        sell_btn.interactable=true;
+        Debug.Log("can");
+    }
+    public void cannot_change(){
+        change_btn.interactable=false;
+        sell_btn.interactable=false;
+        Debug.Log("cannot");
+    }
+    public void sell(){
+        if(hand.item!=null){
+            hand.item.held-=1;
+            RefreshItem();
+        }
     }
 }

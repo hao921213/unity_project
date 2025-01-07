@@ -143,4 +143,5 @@ public class store_controller : MonoBehaviour
         prevPageButton.interactable = currentPage > 0;
         nextPageButton.interactable = currentPage < totalPages - 1;
     }
+
 }

@@ -256,6 +256,7 @@ MonoBehaviour:
   slot_grid: {fileID: 6801460192942893980}
   empty_slot: {fileID: 5538033529505558536, guid: 015aefa090aea3646a32975011e23ea5, type: 3}
   slots: []
+  change_btn: {fileID: 0}
 --- !u!1 &6801460192942893980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 907211903881051414, guid: 99ef489907262f84ca3f505c41bee27c, type: 3}
