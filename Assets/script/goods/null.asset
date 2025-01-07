@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: null
   m_EditorClassIdentifier: 
   tag: none
-  item_name: 
+  item_name: null
   item_image: {fileID: 0}
   price: 0
   held: 1

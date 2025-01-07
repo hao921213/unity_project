@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5628457995337735208}
   - component: {fileID: 342712879912964678}
+  - component: {fileID: 758402871360309976}
+  - component: {fileID: 9158841164510872185}
   m_Layer: 0
   m_Name: Chicken_18_0
   m_TagString: Untagged
@@ -87,3 +89,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &758402871360309976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165068887507307032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1aba334cc66ab3448f87c6bbb416d05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  pauseTime: 2
+  rangeObjectMin: {fileID: 6113912123123904670, guid: fccd84f095ff55142907599d7033e847, type: 3}
+  rangeObjectMax: {fileID: 8856856783536361781, guid: 0bfd08ce56abeb341a7a193fb881d344, type: 3}
+--- !u!95 &9158841164510872185
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165068887507307032}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 819713f5ab62aa74e8d37a41c9c06014, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

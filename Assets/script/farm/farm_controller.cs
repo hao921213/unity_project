@@ -53,10 +53,13 @@ public class farm_controller : MonoBehaviour
             Destroy(animal);
         }
         for(int i=0;i<farm.itemlist.Count;i++){
-            if(farm.itemlist[i]!=null){
+            if(farm.itemlist[i].item_name!="null"){
                 GameObject new_animal=Instantiate(farm.itemlist[i].prefab,new Vector3(Random.Range(left.position.x,right.position.x
                 ), Random.Range(left.position.y,right.position.y), 0), Quaternion.identity);
                 animals.Add(new_animal);
+                farm_animal_move farm_move=new_animal.GetComponent<farm_animal_move>();
+                farm_move.rangeObjectMin=left;
+                farm_move.rangeObjectMax=right;
             }
         }
     }
@@ -67,7 +70,6 @@ public class farm_controller : MonoBehaviour
                     if(farm.itemlist[i].tag=="none"){
                         farm.itemlist[i]=hand.item;
                         update_animal_slot();
-                        update_animal();
                         break;
                     }
                 }
@@ -75,6 +77,7 @@ public class farm_controller : MonoBehaviour
                     if(item!=null && item==hand.item){
                         item.held -= 1;
                         Debug.Log($"push成功: {hand.item.item_name}");
+                        update_animal();
                         bag_controller.change();
                         return;
                     }
