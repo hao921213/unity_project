@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5c8238c06e54941a770ff0d36dcd3e, type: 3}
+  m_Name: w_carrot
+  m_EditorClassIdentifier: 
+  sprite0: {fileID: -1839869784, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
+  sprite1: {fileID: 1583715478, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
+  sprite2: {fileID: 1582385890, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
+  sprite3: {fileID: 2127967235, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
+  sprite4: {fileID: -55443979, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
+  description: 
+  spriteID: 5
