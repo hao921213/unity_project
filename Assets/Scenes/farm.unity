@@ -19515,6 +19515,13 @@ MonoBehaviour:
   farm6: {fileID: 11400000, guid: 0680fa7eb96fd5440adc3da84d8c83d1, type: 2}
   time: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
   all_water: {fileID: 11400000, guid: 8087c1ab7bb74a3488370ede2e85dab5, type: 2}
+  none: {fileID: 11400000, guid: d552f2872b919894caaf9af16648a724, type: 2}
+  farm_1: {fileID: 1718385847}
+  farm_2: {fileID: 124953369}
+  farm_3: {fileID: 1274064670}
+  farm_4: {fileID: 1096875490}
+  farm_5: {fileID: 2035580656}
+  farm_6: {fileID: 1938233493}
 --- !u!1001 &363841142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19983,7 +19990,7 @@ MonoBehaviour:
   scrollbar: {fileID: 1942577218}
   text: {fileID: 57843785}
   index: 5
-  maxWater: 1000
+  maxWater: 50
 --- !u!1 &422196780
 GameObject:
   m_ObjectHideFlags: 0
@@ -30479,7 +30486,7 @@ MonoBehaviour:
   scrollbar: {fileID: 1805343502}
   text: {fileID: 1844436502}
   index: 3
-  maxWater: 1000
+  maxWater: 50
 --- !u!1 &982418855
 GameObject:
   m_ObjectHideFlags: 0
@@ -33006,7 +33013,7 @@ MonoBehaviour:
   scrollbar: {fileID: 1999742902}
   text: {fileID: 1773594801}
   index: 2
-  maxWater: 1000
+  maxWater: 50
 --- !u!1001 &1431838616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33382,7 +33389,7 @@ MonoBehaviour:
   scrollbar: {fileID: 727174854}
   text: {fileID: 982418857}
   index: 0
-  maxWater: 1000
+  maxWater: 50
 --- !u!1001 &1483018459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43394,7 +43401,7 @@ MonoBehaviour:
   scrollbar: {fileID: 1361805169}
   text: {fileID: 1760073327}
   index: 4
-  maxWater: 1000
+  maxWater: 50
 --- !u!1 &1957884977
 GameObject:
   m_ObjectHideFlags: 0
@@ -44432,7 +44439,7 @@ MonoBehaviour:
   scrollbar: {fileID: 903922337}
   text: {fileID: 488295648}
   index: 1
-  maxWater: 1000
+  maxWater: 50
 --- !u!1001 &4745721176892542968
 PrefabInstance:
   m_ObjectHideFlags: 0
