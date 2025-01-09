@@ -9,6 +9,15 @@ public class TRIGGER : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public hand_take hand;
     private int find;
+    public time1 time1;
+    public crop_pic_class carrot;
+    public crop_pic_class green_pepper_seed;
+    public crop_pic_class pump;
+    public crop_pic_class straw;
+    public crop_pic_class w_carrot;
+    public crop_pic_class watermelon;
+    
+
 
 
     private void Start()
@@ -59,7 +68,13 @@ public class TRIGGER : MonoBehaviour
                 update_image();
             }
         }
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        
+        if (spriteRenderer.sprite != null)
+        {
+            
+        }
     }
+
 
 }

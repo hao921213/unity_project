@@ -14,6 +14,7 @@ TagManager:
   - enemy1
   - Garden_Portal
   - fishing_Portal
+  - bed_Portal
   layers:
   - Default
   - TransparentFX

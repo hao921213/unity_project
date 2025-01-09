@@ -20,3 +20,5 @@ MonoBehaviour:
   iteminfo: "\u6BDB"
   prefab: {fileID: 7197565117110475285, guid: 60e0d26dc1d117a42bed9b45788b2766, type: 3}
   water: 9
+  food: 5
+  grow: 10
