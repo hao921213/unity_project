@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
-  m_Name: chicken_l2
+  m_Name: roast_sheep
   m_EditorClassIdentifier: 
-  tag: animal
-  item_name: chicken_l2
-  item_image: {fileID: -1374752067, guid: e5e9ec84ae3c1da46a6f0621896c0968, type: 3}
-  price: 1000
+  tag: roast_meat
+  item_name: roast_sheeo
+  item_image: {fileID: -886937231, guid: 338eb9325b511bf4dbf0184fff5f5d9c, type: 3}
+  price: 0
   held: 1
   iteminfo: 
-  prefab: {fileID: 1900284182535163563, guid: fc84f6c0ec5325b4b84eca4f47574e5a, type: 3}
-  water: 2
-  food: 5
-  grow: 3
+  prefab: {fileID: 0}
+  water: 0
+  food: 0
+  grow: 0
