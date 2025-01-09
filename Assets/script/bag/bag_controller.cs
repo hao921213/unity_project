@@ -34,6 +34,11 @@ public class bag_controller : MonoBehaviour
         }
     }
     public static void RefreshItem(){
+            if (instance == null)
+    {
+        Debug.LogError("The static instance is null. Ensure it is initialized.");
+        return;
+    }
         for(int i=0;i<instance.slot_grid.transform.childCount;i++){
             Destroy(instance.slot_grid.transform.GetChild(i).gameObject);
         }
