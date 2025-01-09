@@ -151,14 +151,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   hand: {fileID: 0}
   time1: {fileID: 0}
+  state: {fileID: 0}
   carrot: {fileID: 0}
   green_pepper: {fileID: 0}
   pump: {fileID: 0}
   straw: {fileID: 0}
   w_carrot: {fileID: 0}
   watermelon: {fileID: 0}
+  animator: {fileID: 0}
   player_bag: {fileID: 0}
 --- !u!61 &55887541
 BoxCollider2D:
@@ -437,7 +440,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &76084468
 Rigidbody2D:
@@ -478,14 +481,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 10
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &81136924
 GameObject:
@@ -621,7 +627,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &81136928
 Rigidbody2D:
@@ -662,14 +668,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 15
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &85078995
 GameObject:
@@ -7988,7 +7997,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &90662947
 Rigidbody2D:
@@ -8029,14 +8038,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 35
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &94822216
 GameObject:
@@ -8070,14 +8082,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   hand: {fileID: 0}
   time1: {fileID: 0}
+  state: {fileID: 0}
   carrot: {fileID: 0}
   green_pepper: {fileID: 0}
   pump: {fileID: 0}
   straw: {fileID: 0}
   w_carrot: {fileID: 0}
   watermelon: {fileID: 0}
+  animator: {fileID: 0}
   player_bag: {fileID: 0}
 --- !u!61 &94822218
 BoxCollider2D:
@@ -8680,7 +8695,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &163867896
 Rigidbody2D:
@@ -8721,14 +8736,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 36
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &196232006
 GameObject:
@@ -9026,7 +9044,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &254159795
 Rigidbody2D:
@@ -9067,14 +9085,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 20
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1001 &267010395
 PrefabInstance:
@@ -9311,7 +9332,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &273014060
 Rigidbody2D:
@@ -9352,14 +9373,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 45
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &301023384
 GameObject:
@@ -9495,7 +9519,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &301023388
 Rigidbody2D:
@@ -9536,14 +9560,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 16
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &326637548
 GameObject:
@@ -9577,14 +9604,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   hand: {fileID: 0}
   time1: {fileID: 0}
+  state: {fileID: 0}
   carrot: {fileID: 0}
   green_pepper: {fileID: 0}
   pump: {fileID: 0}
   straw: {fileID: 0}
   w_carrot: {fileID: 0}
   watermelon: {fileID: 0}
+  animator: {fileID: 0}
   player_bag: {fileID: 0}
 --- !u!61 &326637550
 BoxCollider2D:
@@ -9761,14 +9791,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   hand: {fileID: 0}
   time1: {fileID: 0}
+  state: {fileID: 0}
   carrot: {fileID: 0}
   green_pepper: {fileID: 0}
   pump: {fileID: 0}
   straw: {fileID: 0}
   w_carrot: {fileID: 0}
   watermelon: {fileID: 0}
+  animator: {fileID: 0}
   player_bag: {fileID: 0}
 --- !u!61 &342652579
 BoxCollider2D:
@@ -10047,7 +10080,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &384672156
 Rigidbody2D:
@@ -10088,14 +10121,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 25
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &385015182
 GameObject:
@@ -10268,7 +10304,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &387891088
 Rigidbody2D:
@@ -10309,14 +10345,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 7
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &421046391
 GameObject:
@@ -10614,7 +10653,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &422111800
 Rigidbody2D:
@@ -10655,14 +10694,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 21
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &433521942
 GameObject:
@@ -10951,7 +10993,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &458992840
 Rigidbody2D:
@@ -10992,14 +11034,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 27
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &474151389
 GameObject:
@@ -11135,7 +11180,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &474151393
 Rigidbody2D:
@@ -11176,14 +11221,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 37
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &509975487
 GameObject:
@@ -11319,7 +11367,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &509975491
 Rigidbody2D:
@@ -11360,14 +11408,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 12
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &545423277
 GameObject:
@@ -11438,14 +11489,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   hand: {fileID: 0}
   time1: {fileID: 0}
+  state: {fileID: 0}
   carrot: {fileID: 0}
   green_pepper: {fileID: 0}
   pump: {fileID: 0}
   straw: {fileID: 0}
   w_carrot: {fileID: 0}
   watermelon: {fileID: 0}
+  animator: {fileID: 0}
   player_bag: {fileID: 0}
 --- !u!61 &555537008
 BoxCollider2D:
@@ -11724,7 +11778,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &563746251
 Rigidbody2D:
@@ -11765,14 +11819,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 1
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &590528155
 GameObject:
@@ -11945,7 +12002,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &604111757
 Rigidbody2D:
@@ -11986,14 +12043,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 34
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &647464390
 GameObject:
@@ -16030,7 +16090,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &720358278
 Rigidbody2D:
@@ -16071,14 +16131,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 11
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &736060780
 GameObject:
@@ -16214,7 +16277,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &736060784
 Rigidbody2D:
@@ -16255,14 +16318,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 9
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &757811680
 GameObject:
@@ -16398,7 +16464,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &757811684
 Rigidbody2D:
@@ -16439,14 +16505,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 30
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &791965058
 GameObject:
@@ -16582,7 +16651,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &791965062
 Rigidbody2D:
@@ -16623,14 +16692,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 17
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &809177955
 GameObject:
@@ -16664,14 +16736,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   hand: {fileID: 0}
   time1: {fileID: 0}
+  state: {fileID: 0}
   carrot: {fileID: 0}
   green_pepper: {fileID: 0}
   pump: {fileID: 0}
   straw: {fileID: 0}
   w_carrot: {fileID: 0}
   watermelon: {fileID: 0}
+  animator: {fileID: 0}
   player_bag: {fileID: 0}
 --- !u!61 &809177957
 BoxCollider2D:
@@ -16950,7 +17025,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &873183669
 Rigidbody2D:
@@ -16991,14 +17066,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 29
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &913052337
 GameObject:
@@ -17029,7 +17107,7 @@ Transform:
   m_GameObject: {fileID: 913052337}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.84, y: 0.26243353, z: 0.009055431}
+  m_LocalPosition: {x: -1.842499, y: 0.26243353, z: 0.009055431}
   m_LocalScale: {x: 1.03, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17047,14 +17125,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 2
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!61 &913052340
 BoxCollider2D:
@@ -17100,7 +17181,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &913052341
 Rigidbody2D:
@@ -17258,6 +17339,11 @@ Transform:
   - {fileID: 1852939842}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1014303352 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3836429824433402287, guid: 3505a28350ae15c4f885ec2fcad852af, type: 3}
+  m_PrefabInstance: {fileID: 2035575583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1028088313
 GameObject:
   m_ObjectHideFlags: 0
@@ -17287,7 +17373,7 @@ Transform:
   m_GameObject: {fileID: 1028088313}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.26243353, z: 0.009055431}
+  m_LocalPosition: {x: 1.157501, y: 0.26243353, z: 0.009055431}
   m_LocalScale: {x: 1.03, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17305,14 +17391,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 4
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!61 &1028088316
 BoxCollider2D:
@@ -17358,7 +17447,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1028088317
 Rigidbody2D:
@@ -17576,7 +17665,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1063469565
 Rigidbody2D:
@@ -17617,14 +17706,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 14
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1077585188
 GameObject:
@@ -17760,7 +17852,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1077585192
 Rigidbody2D:
@@ -17801,14 +17893,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 40
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1099560027
 GameObject:
@@ -18106,7 +18201,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1165788953
 Rigidbody2D:
@@ -18147,14 +18242,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 28
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1210848152
 GameObject:
@@ -18290,7 +18388,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1210848156
 Rigidbody2D:
@@ -18331,14 +18429,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 42
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1230624854
 GameObject:
@@ -18474,7 +18575,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1230624858
 Rigidbody2D:
@@ -18515,14 +18616,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 19
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1242120362
 GameObject:
@@ -18658,7 +18762,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1242120366
 Rigidbody2D:
@@ -18699,14 +18803,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 32
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1425209067
 GameObject:
@@ -18842,7 +18949,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1425209071
 Rigidbody2D:
@@ -18883,14 +18990,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 6
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1432914893
 GameObject:
@@ -18924,14 +19034,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   hand: {fileID: 0}
   time1: {fileID: 0}
+  state: {fileID: 0}
   carrot: {fileID: 0}
   green_pepper: {fileID: 0}
   pump: {fileID: 0}
   straw: {fileID: 0}
   w_carrot: {fileID: 0}
   watermelon: {fileID: 0}
+  animator: {fileID: 0}
   player_bag: {fileID: 0}
 --- !u!61 &1432914895
 BoxCollider2D:
@@ -19145,14 +19258,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   hand: {fileID: 0}
   time1: {fileID: 0}
+  state: {fileID: 0}
   carrot: {fileID: 0}
   green_pepper: {fileID: 0}
   pump: {fileID: 0}
   straw: {fileID: 0}
   w_carrot: {fileID: 0}
   watermelon: {fileID: 0}
+  animator: {fileID: 0}
   player_bag: {fileID: 0}
 --- !u!61 &1454534505
 BoxCollider2D:
@@ -19516,7 +19632,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1575185226
 Rigidbody2D:
@@ -19557,14 +19673,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 13
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1585773056
 GameObject:
@@ -19794,7 +19913,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1646616808
 Rigidbody2D:
@@ -19835,14 +19954,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 43
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1652143681
 GameObject:
@@ -19978,7 +20100,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1652143685
 Rigidbody2D:
@@ -20019,14 +20141,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 33
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1655858843
 GameObject:
@@ -20162,7 +20287,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1655858847
 Rigidbody2D:
@@ -20203,14 +20328,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 22
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1673373513
 GameObject:
@@ -20278,7 +20406,7 @@ Transform:
   m_GameObject: {fileID: 1685852806}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.42, y: 0.26243353, z: 0.009055431}
+  m_LocalPosition: {x: -0.3424988, y: 0.26243353, z: 0.009055431}
   m_LocalScale: {x: 1.03, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20296,14 +20424,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 3
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!61 &1685852809
 BoxCollider2D:
@@ -20349,7 +20480,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1685852810
 Rigidbody2D:
@@ -20567,7 +20698,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1717287601
 Rigidbody2D:
@@ -20608,14 +20739,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 8
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1738787717
 GameObject:
@@ -20646,7 +20780,7 @@ Transform:
   m_GameObject: {fileID: 1738787717}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.54, y: 0.26243353, z: 0.009055431}
+  m_LocalPosition: {x: 2.657501, y: 0.26243353, z: 0.009055431}
   m_LocalScale: {x: 1.03, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20664,14 +20798,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 5
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!61 &1738787720
 BoxCollider2D:
@@ -20717,7 +20854,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1738787721
 Rigidbody2D:
@@ -21134,7 +21271,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1772281888
 Rigidbody2D:
@@ -21175,14 +21312,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 44
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!114 &1779184894 stripped
 MonoBehaviour:
@@ -21329,7 +21469,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1825083914
 Rigidbody2D:
@@ -21370,14 +21510,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 26
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1834735407
 GameObject:
@@ -25236,7 +25379,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1867700625
 Rigidbody2D:
@@ -25277,14 +25420,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 38
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1868486876
 GameObject:
@@ -25420,7 +25566,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1868486880
 Rigidbody2D:
@@ -25461,14 +25607,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 39
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1896326415
 GameObject:
@@ -25941,7 +26090,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1947270760
 Rigidbody2D:
@@ -25982,14 +26131,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 31
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1971857382
 GameObject:
@@ -26125,7 +26277,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1971857386
 Rigidbody2D:
@@ -26166,14 +26318,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 24
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1980956831
 GameObject:
@@ -26350,14 +26505,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 0
   hand: {fileID: 0}
   time1: {fileID: 0}
+  state: {fileID: 0}
   carrot: {fileID: 0}
   green_pepper: {fileID: 0}
   pump: {fileID: 0}
   straw: {fileID: 0}
   w_carrot: {fileID: 0}
   watermelon: {fileID: 0}
+  animator: {fileID: 0}
   player_bag: {fileID: 0}
 --- !u!1 &1983785768
 GameObject:
@@ -26493,7 +26651,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &1983785772
 Rigidbody2D:
@@ -26534,14 +26692,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 41
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1001 &2035575583
 PrefabInstance:
@@ -26763,7 +26924,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &2036079788
 Rigidbody2D:
@@ -26804,14 +26965,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 23
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &2057059721
 GameObject:
@@ -26984,7 +27148,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1, y: 0.1}
   m_EdgeRadius: 0
 --- !u!50 &2077428389
 Rigidbody2D:
@@ -27025,14 +27189,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: 18
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  state: {fileID: 11400000, guid: 0e7d0721292246e4cad08dc89f4e0af3, type: 2}
   carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
   green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
   pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
   straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
   w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
   watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  animator: {fileID: 1014303352}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &2079962762
 GameObject:

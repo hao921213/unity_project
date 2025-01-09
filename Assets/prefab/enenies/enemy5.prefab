@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3823151060298805357}
   - component: {fileID: 8737474448440484191}
   - component: {fileID: 8745446737666808188}
+  - component: {fileID: 6912477894997014112}
   m_Layer: 0
   m_Name: enemy5
   m_TagString: enemy1
@@ -103,8 +104,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000000
-  m_LinearDamping: 50
+  m_Mass: 10
+  m_LinearDamping: 2
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -204,3 +205,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6912477894997014112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5348635202126231720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f80d120ef3e8b642bbb2d572bf81f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hp: 15
+  attack: {fileID: 0}
+  knockbackForce: 40
+  money: {fileID: 11400000, guid: 7e8379af841db5344a10b97462880697, type: 2}

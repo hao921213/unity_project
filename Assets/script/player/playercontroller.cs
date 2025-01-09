@@ -21,6 +21,9 @@ public class playercontroller : MonoBehaviour
     public bag player_bag;
     private int direction=0;
 
+    public float invincibleTime = 2f; // 無敵時間（秒）
+    private bool isInvincible = false; // 是否處於無敵狀態
+
     void Start()
     {
         isopen = false;
@@ -43,19 +46,39 @@ public class playercontroller : MonoBehaviour
         moveInput(); // 處理輸入  
         use();
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "enemy1")
-        {
-            health_change.TakeDamage(1);
-            print(hp.health);
-            if (hp.health == 0)
-            {
-                SceneManager.LoadScene("Home");
-                hp.health = 10;
-            }
-        }
-    }
+   
+    //private void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    if(collision.gameObject.tag == "enemy1") 
+    //    {
+    //        if (!isInvincible) //非無敵才會扣血
+    //        {
+    //            health_change.TakeDamage(0.01f);
+    //            print("玩家血量" + hp.health);
+
+    //            if (hp.health <= 0)
+    //            {
+    //                SceneManager.LoadScene("Home");
+    //                hp.health = 10;
+    //            }
+    //        }
+    //        else
+    //        {
+    //            StartCoroutine(InvincibleCoroutine());
+    //        }
+    //    }
+    //}
+
+    //private System.Collections.IEnumerator InvincibleCoroutine()
+    //{
+    //    isInvincible = true; // 設置為無敵
+    //    print("無敵開");
+    //    yield return new WaitForSeconds(invincibleTime); // 等待無敵時間結束
+    //    isInvincible = false; // 無敵結束
+    //    print("無敵關");
+    //}
+
+
     void FixedUpdate()
     {
         TryMove(); // 嘗試移動玩家
@@ -253,7 +276,7 @@ public class playercontroller : MonoBehaviour
 
     
     void attack(){
-        if(hand.item==null){
+        if(hand.item == null){
             
             switch(direction){
                 case 0:
