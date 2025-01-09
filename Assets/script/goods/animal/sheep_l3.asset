@@ -15,10 +15,10 @@ MonoBehaviour:
   tag: animal
   item_name: sheep_l3
   item_image: {fileID: 1248368234, guid: 7f7e11c64c835394d96a81c7e882d734, type: 3}
-  price: 1000
+  price: 400
   held: 1
   iteminfo: 
   prefab: {fileID: 1214927325095277556, guid: 8fcebb00a6a702449bac86ad05d6e118, type: 3}
   water: 7
   food: 5
-  grow: 7
+  grow: 5

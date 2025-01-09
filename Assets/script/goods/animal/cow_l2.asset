@@ -15,10 +15,10 @@ MonoBehaviour:
   tag: animal
   item_name: cow_l2
   item_image: {fileID: 659380171, guid: 54c38cfc7a8851e44ac43ace1558176f, type: 3}
-  price: 1000
+  price: 1500
   held: 1
   iteminfo: 
   prefab: {fileID: 6347424741828887148, guid: a0d5e61dde5dd8341881b7bc6d0f1364, type: 3}
   water: 9
   food: 5
-  grow: 10
+  grow: 8

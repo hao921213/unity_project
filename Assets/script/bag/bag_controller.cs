@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Mathematics;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 using UnityEngine.UI;
@@ -78,7 +79,7 @@ public class bag_controller : MonoBehaviour
     public void sell(){
         if(hand.item!=null){
             hand.item.held-=1;
-            player1.money+=(hand.item.price-100);
+            player1.money+=(int)math.ceil(hand.item.price*0.8);
             if(hand.item.held==0){
                 hand.item=null;
             }

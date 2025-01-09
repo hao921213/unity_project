@@ -15,7 +15,10 @@ MonoBehaviour:
   tag: crop
   item_name: watermelon_seed
   item_image: {fileID: -135212734, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
-  price: 0
+  price: 2
   held: 1
   iteminfo: 
   prefab: {fileID: 0}
+  water: 0
+  food: 0
+  grow: 0

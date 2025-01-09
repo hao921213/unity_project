@@ -37,6 +37,7 @@ public class farm_controller : MonoBehaviour
     }
     private void Start(){
         update_animal_slot();
+        update_animal();
     }
     public void update_hand_slot(){
         if(hand.item!=null && hand.item.tag=="animal"){
@@ -148,6 +149,13 @@ public class farm_controller : MonoBehaviour
                 case "pig_l3":
                     meat = pig_meat;
                     break;
+                case "sheep_l1":
+                case "sheep_l2":
+                case "sheep_l3":
+                case "sheep_l4":
+                case "sheep_l5":
+                    meat = sheep_meat;
+                    break;
             }
             // 確保索引範圍合法
             if (index >= 0 && index < farm.itemlist.Count)
@@ -175,7 +183,7 @@ public class farm_controller : MonoBehaviour
                     if (player_bag.itemlist[i] == null)
                     {
                         player_bag.itemlist[i] = meat;
-                        Debug.Log($"成功新增: {meat.item_name} 到背包。");
+                        Debug.Log($"成功新增:  到背包。");
 
                         // 將農場槽位設置為空
                         farm.itemlist[index] = empty;

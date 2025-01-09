@@ -15,8 +15,8 @@ MonoBehaviour:
   tag: meat
   item_name: sheep_meat
   item_image: {fileID: 514300988, guid: 338eb9325b511bf4dbf0184fff5f5d9c, type: 3}
-  price: 1000
-  held: 1
+  price: 800
+  held: 4
   iteminfo: 
   prefab: {fileID: 0}
   water: 0

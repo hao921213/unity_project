@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b781ecfce33074429c6c2ee615602c9, type: 3}
   m_Name: hay
   m_EditorClassIdentifier: 
-  tag: 
+  tag: crop
   item_name: hay
   item_image: {fileID: -1941000334, guid: 0f9ec54610ef012458721b25dbd89e22, type: 3}
-  price: 100
+  price: 20
   held: 1
   iteminfo: 
   prefab: {fileID: 0}
   water: 0
+  food: 0
+  grow: 0

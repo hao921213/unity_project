@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b570cf28c17855341b9add89cea2cf34, type: 3}
   m_Name: player_object
   m_EditorClassIdentifier: 
-  health: 0.5489863
-  money: 100000
+  health: 20
+  money: 85600

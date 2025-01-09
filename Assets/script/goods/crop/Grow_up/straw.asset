@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tag: crop
   item_name: straw
-  item_image: {fileID: -1941000334, guid: 0f9ec54610ef012458721b25dbd89e22, type: 3}
-  price: 0
+  item_image: {fileID: 838974119, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
+  price: 20
   held: 1
   iteminfo: 
   prefab: {fileID: 0}
   water: 0
+  food: 0
+  grow: 0

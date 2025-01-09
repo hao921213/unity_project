@@ -15,10 +15,10 @@ MonoBehaviour:
   tag: animal
   item_name: pig_l2
   item_image: {fileID: 691026354, guid: b24590471def4c740aebce74cf8a061f, type: 3}
-  price: 1000
+  price: 80
   held: 1
   iteminfo: 
   prefab: {fileID: 3748840882620497054, guid: f963caff304d1bc4984826174d6b855f, type: 3}
   water: 5
   food: 5
-  grow: 5
+  grow: 3

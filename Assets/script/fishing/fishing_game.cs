@@ -11,6 +11,7 @@ public class Fishing_game : MonoBehaviour
     public Fishing fishing;
     public bag fish_item;
     public bag player_bag;
+    public health_bar health_bar;
 
     private float minY;              // BoxCollider 的最小 y
     private float maxY;              // BoxCollider 的最大 y
@@ -55,12 +56,12 @@ public class Fishing_game : MonoBehaviour
                 speed += Mathf.Sign(speed); // 根据方向增加速度
                 timeCounter = 0f;          // 重置计时器
             }
-            if(Mathf.Abs(speed)>=20f){
+            if(Mathf.Abs(speed)>=10f){
                 if(speed>0){
-                    speed=20f;
+                    speed=10f;
                 }
                 else{
-                    speed=-20f;
+                    speed=-10f;
                 }
             }
             Move();
@@ -115,27 +116,54 @@ public class Fishing_game : MonoBehaviour
         int get=-1;
         if (transform.position.y <= green_maxY && transform.position.y >= green_minY)
         {
+            int temp = 0;
             Debug.Log("green");
-            get=Random.Range(0,7);
+            temp=Random.Range(0,100);
+            if(temp>0 && temp <= 20)
+            {
+                get = 0;
+            }
+            else if(temp > 20 && temp <= 40)
+            {
+                get = 1;
+            }
+            else if(temp>40 && temp <= 60)
+            {
+                get = 2;
+            }
+            else if (temp > 60 && temp <= 80)
+            {
+                get = 3;
+            }
+            else if (temp > 80 && temp <= 90)
+            {
+                get = 4;
+            }
+            else if (temp > 90 && temp <= 96)
+            {
+                get = 5;
+            }
+            else
+            {
+                get = 6;
+            }
+
             player_get(fish_item.itemlist[get]);
 
         }
         else if (transform.position.y <= red_maxY && transform.position.y >= red_minY)
         {
             Debug.Log("red");
-            get=Random.Range(0,7);
-            player_get(fish_item.itemlist[get]);
+            health_bar.TakeDamage(10);
         }
         else if (transform.position.y <= yellow_maxY && transform.position.y >= yellow_minY)
         {
             Debug.Log("yellow");
-            get=Random.Range(0,7);
+            get=Random.Range(6,7);
             player_get(fish_item.itemlist[get]);
         }
         else{
             Debug.Log("white");
-            get=Random.Range(0,7);
-            player_get(fish_item.itemlist[get]);
         }
         box.SetActive(false);
         red.SetActive(false);

@@ -18,7 +18,6 @@ public class playercontroller : MonoBehaviour
     private Vector2 movement; // 儲存移動方向
     public player1 hp;
     public health_bar health_change;
-    public bag player_bag;
     private int direction=0;
 
     public float invincibleTime = 2f; // 無敵時間（秒）
@@ -320,12 +319,12 @@ public class playercontroller : MonoBehaviour
         bag_controller.RefreshItem();
         switch (hand.item.tag) {
             case "roast_meat":
-                health_change.Heal(5);
-                Debug.Log($"+5");
+                health_change.Heal(2.5f);
+                Debug.Log($"+2.5");
                 break;
             case "crop":
-                health_change.Heal(2);
-                Debug.Log("+2");
+                health_change.Heal(0.5f);
+                Debug.Log("+0.5");
                 break;
         }
     }
