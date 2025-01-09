@@ -17,5 +17,6 @@ MonoBehaviour:
   sprite2: {fileID: 1582385890, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
   sprite3: {fileID: 2127967235, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
   sprite4: {fileID: -55443979, guid: 19de471ec8e70ba418cdc18ac63ae945, type: 3}
+  item: {fileID: 11400000, guid: d31b92eda0fc0234fb996b12fc8f5cd2, type: 2}
   description: 
   spriteID: 5

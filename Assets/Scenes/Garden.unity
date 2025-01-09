@@ -151,8 +151,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 0}
   hand: {fileID: 0}
+  time1: {fileID: 0}
+  carrot: {fileID: 0}
+  green_pepper: {fileID: 0}
+  pump: {fileID: 0}
+  straw: {fileID: 0}
+  w_carrot: {fileID: 0}
+  watermelon: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!61 &55887541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -308,6 +315,7 @@ GameObject:
   - component: {fileID: 76084465}
   - component: {fileID: 76084467}
   - component: {fileID: 76084468}
+  - component: {fileID: 76084469}
   m_Layer: 0
   m_Name: Square 1 (4)
   m_TagString: Untagged
@@ -415,7 +423,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -439,7 +447,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76084464}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -458,6 +466,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &76084469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76084464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &81136924
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +499,7 @@ GameObject:
   - component: {fileID: 81136925}
   - component: {fileID: 81136927}
   - component: {fileID: 81136928}
+  - component: {fileID: 81136929}
   m_Layer: 0
   m_Name: Square 2 (4)
   m_TagString: Untagged
@@ -577,7 +607,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -601,7 +631,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81136924}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -620,6 +650,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &81136929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81136924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &85078995
 GameObject:
   m_ObjectHideFlags: 0
@@ -7803,168 +7854,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &85852091
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 85852093}
-  - component: {fileID: 85852092}
-  - component: {fileID: 85852094}
-  - component: {fileID: 85852095}
-  m_Layer: 0
-  m_Name: Square 0(5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!212 &85852092
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85852091}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -715820025
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -11785465, guid: 308d07560997ec446a029ad8d7eb9028, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &85852093
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85852091}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6575012, y: 0.26243353, z: 0.009055431}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 545423278}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &85852094
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85852091}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!50 &85852095
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85852091}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &90662943
 GameObject:
   m_ObjectHideFlags: 0
@@ -7977,6 +7866,7 @@ GameObject:
   - component: {fileID: 90662944}
   - component: {fileID: 90662946}
   - component: {fileID: 90662947}
+  - component: {fileID: 90662948}
   m_Layer: 0
   m_Name: Square 6 (4)
   m_TagString: Untagged
@@ -8084,7 +7974,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -8108,7 +7998,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90662943}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -8127,6 +8017,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &90662948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90662943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &94822216
 GameObject:
   m_ObjectHideFlags: 0
@@ -8159,8 +8070,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 0}
   hand: {fileID: 0}
+  time1: {fileID: 0}
+  carrot: {fileID: 0}
+  green_pepper: {fileID: 0}
+  pump: {fileID: 0}
+  straw: {fileID: 0}
+  w_carrot: {fileID: 0}
+  watermelon: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!61 &94822218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8640,6 +8558,7 @@ GameObject:
   - component: {fileID: 163867893}
   - component: {fileID: 163867895}
   - component: {fileID: 163867896}
+  - component: {fileID: 163867897}
   m_Layer: 0
   m_Name: Square 7
   m_TagString: Untagged
@@ -8747,7 +8666,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -8771,7 +8690,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163867892}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -8790,6 +8709,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &163867897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163867892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &196232006
 GameObject:
   m_ObjectHideFlags: 0
@@ -8808,7 +8748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &196232007
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8964,6 +8904,7 @@ GameObject:
   - component: {fileID: 254159792}
   - component: {fileID: 254159794}
   - component: {fileID: 254159795}
+  - component: {fileID: 254159796}
   m_Layer: 0
   m_Name: Square 3 (4)
   m_TagString: Untagged
@@ -9071,7 +9012,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -9095,7 +9036,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254159791}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -9114,6 +9055,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &254159796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254159791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1001 &267010395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9202,6 +9164,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 656388166780142598, guid: 47b13907fac4a2d43acba091b8865fc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 5466524757007562023, guid: 47b13907fac4a2d43acba091b8865fc1, type: 3}
       propertyPath: m_Name
       value: bag_canvas
@@ -9223,6 +9189,7 @@ GameObject:
   - component: {fileID: 273014057}
   - component: {fileID: 273014059}
   - component: {fileID: 273014060}
+  - component: {fileID: 273014061}
   m_Layer: 0
   m_Name: Square 8 (4)
   m_TagString: Untagged
@@ -9330,7 +9297,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -9354,7 +9321,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273014056}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -9373,6 +9340,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &273014061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273014056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &301023384
 GameObject:
   m_ObjectHideFlags: 0
@@ -9385,6 +9373,7 @@ GameObject:
   - component: {fileID: 301023385}
   - component: {fileID: 301023387}
   - component: {fileID: 301023388}
+  - component: {fileID: 301023389}
   m_Layer: 0
   m_Name: Square 3
   m_TagString: Untagged
@@ -9492,7 +9481,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -9516,7 +9505,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301023384}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -9535,6 +9524,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &301023389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301023384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &326637548
 GameObject:
   m_ObjectHideFlags: 0
@@ -9567,8 +9577,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 0}
   hand: {fileID: 0}
+  time1: {fileID: 0}
+  carrot: {fileID: 0}
+  green_pepper: {fileID: 0}
+  pump: {fileID: 0}
+  straw: {fileID: 0}
+  w_carrot: {fileID: 0}
+  watermelon: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!61 &326637550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9744,8 +9761,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 0}
   hand: {fileID: 0}
+  time1: {fileID: 0}
+  carrot: {fileID: 0}
+  green_pepper: {fileID: 0}
+  pump: {fileID: 0}
+  straw: {fileID: 0}
+  w_carrot: {fileID: 0}
+  watermelon: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!61 &342652579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9901,6 +9925,7 @@ GameObject:
   - component: {fileID: 384672153}
   - component: {fileID: 384672155}
   - component: {fileID: 384672156}
+  - component: {fileID: 384672157}
   m_Layer: 0
   m_Name: Square 4 (4)
   m_TagString: Untagged
@@ -10008,7 +10033,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -10032,7 +10057,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384672152}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -10051,6 +10076,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &384672157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384672152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &385015182
 GameObject:
   m_ObjectHideFlags: 0
@@ -10066,7 +10112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &385015183
 Transform:
   m_ObjectHideFlags: 0
@@ -10100,6 +10146,7 @@ GameObject:
   - component: {fileID: 387891085}
   - component: {fileID: 387891087}
   - component: {fileID: 387891088}
+  - component: {fileID: 387891089}
   m_Layer: 0
   m_Name: Square 1 (1)
   m_TagString: Untagged
@@ -10207,7 +10254,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -10231,7 +10278,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387891084}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -10250,6 +10297,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &387891089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387891084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &421046391
 GameObject:
   m_ObjectHideFlags: 0
@@ -10424,6 +10492,7 @@ GameObject:
   - component: {fileID: 422111797}
   - component: {fileID: 422111799}
   - component: {fileID: 422111800}
+  - component: {fileID: 422111801}
   m_Layer: 0
   m_Name: Square 4
   m_TagString: Untagged
@@ -10531,7 +10600,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -10555,7 +10624,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422111796}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -10574,6 +10643,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &422111801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422111796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &433521942
 GameObject:
   m_ObjectHideFlags: 0
@@ -10662,7 +10752,7 @@ Transform:
   m_GameObject: {fileID: 433521942}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -15.52, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10739,6 +10829,7 @@ GameObject:
   - component: {fileID: 458992837}
   - component: {fileID: 458992839}
   - component: {fileID: 458992840}
+  - component: {fileID: 458992841}
   m_Layer: 0
   m_Name: Square 5 (1)
   m_TagString: Untagged
@@ -10846,7 +10937,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -10870,7 +10961,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458992836}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -10889,6 +10980,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &458992841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458992836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &474151389
 GameObject:
   m_ObjectHideFlags: 0
@@ -10901,6 +11013,7 @@ GameObject:
   - component: {fileID: 474151390}
   - component: {fileID: 474151392}
   - component: {fileID: 474151393}
+  - component: {fileID: 474151394}
   m_Layer: 0
   m_Name: Square 7 (1)
   m_TagString: Untagged
@@ -11008,7 +11121,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -11032,7 +11145,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474151389}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -11051,6 +11164,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &474151394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474151389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &509975487
 GameObject:
   m_ObjectHideFlags: 0
@@ -11063,6 +11197,7 @@ GameObject:
   - component: {fileID: 509975488}
   - component: {fileID: 509975490}
   - component: {fileID: 509975491}
+  - component: {fileID: 509975492}
   m_Layer: 0
   m_Name: Square 2 (1)
   m_TagString: Untagged
@@ -11170,7 +11305,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -11194,7 +11329,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509975487}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -11213,6 +11348,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &509975492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509975487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &545423277
 GameObject:
   m_ObjectHideFlags: 0
@@ -11243,10 +11399,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 563746249}
-  - {fileID: 1267784491}
-  - {fileID: 825481590}
-  - {fileID: 715256520}
-  - {fileID: 85852093}
+  - {fileID: 913052338}
+  - {fileID: 1685852807}
+  - {fileID: 1028088314}
+  - {fileID: 1738787718}
   - {fileID: 196232008}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11282,8 +11438,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 0}
   hand: {fileID: 0}
+  time1: {fileID: 0}
+  carrot: {fileID: 0}
+  green_pepper: {fileID: 0}
+  pump: {fileID: 0}
+  straw: {fileID: 0}
+  w_carrot: {fileID: 0}
+  watermelon: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!61 &555537008
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11491,7 +11654,7 @@ SpriteRenderer:
   m_SortingLayerID: -715820025
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -11785465, guid: 308d07560997ec446a029ad8d7eb9028, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11499,7 +11662,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &563746249
@@ -11602,8 +11765,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 0}
   hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &590528155
 GameObject:
   m_ObjectHideFlags: 0
@@ -11619,7 +11789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &590528156
 Transform:
   m_ObjectHideFlags: 0
@@ -11653,6 +11823,7 @@ GameObject:
   - component: {fileID: 604111754}
   - component: {fileID: 604111756}
   - component: {fileID: 604111757}
+  - component: {fileID: 604111758}
   m_Layer: 0
   m_Name: Square 6 (3)
   m_TagString: Untagged
@@ -11760,7 +11931,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -11784,7 +11955,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604111753}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -11803,6 +11974,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &604111758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604111753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &647464390
 GameObject:
   m_ObjectHideFlags: 0
@@ -11877,8 +12069,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1906811143
-  m_SortingLayer: 2
+  m_SortingLayerID: -1830625515
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -15704,168 +15896,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &715256518
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 715256520}
-  - component: {fileID: 715256519}
-  - component: {fileID: 715256521}
-  - component: {fileID: 715256522}
-  m_Layer: 0
-  m_Name: Square 0(4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!212 &715256519
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715256518}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -715820025
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -11785465, guid: 308d07560997ec446a029ad8d7eb9028, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &715256520
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715256518}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1575012, y: 0.26243353, z: 0.009055431}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 545423278}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &715256521
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715256518}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!50 &715256522
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715256518}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &720358274
 GameObject:
   m_ObjectHideFlags: 0
@@ -15878,6 +15908,7 @@ GameObject:
   - component: {fileID: 720358275}
   - component: {fileID: 720358277}
   - component: {fileID: 720358278}
+  - component: {fileID: 720358279}
   m_Layer: 0
   m_Name: Square 2
   m_TagString: Untagged
@@ -15985,7 +16016,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -16009,7 +16040,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720358274}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -16028,6 +16059,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &720358279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720358274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &736060780
 GameObject:
   m_ObjectHideFlags: 0
@@ -16040,6 +16092,7 @@ GameObject:
   - component: {fileID: 736060781}
   - component: {fileID: 736060783}
   - component: {fileID: 736060784}
+  - component: {fileID: 736060785}
   m_Layer: 0
   m_Name: Square 1 (3)
   m_TagString: Untagged
@@ -16147,7 +16200,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -16171,7 +16224,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736060780}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -16190,6 +16243,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &736060785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736060780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &757811680
 GameObject:
   m_ObjectHideFlags: 0
@@ -16202,6 +16276,7 @@ GameObject:
   - component: {fileID: 757811681}
   - component: {fileID: 757811683}
   - component: {fileID: 757811684}
+  - component: {fileID: 757811685}
   m_Layer: 0
   m_Name: Square 5 (4)
   m_TagString: Untagged
@@ -16309,7 +16384,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -16333,7 +16408,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757811680}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -16352,6 +16427,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &757811685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757811680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &791965058
 GameObject:
   m_ObjectHideFlags: 0
@@ -16364,6 +16460,7 @@ GameObject:
   - component: {fileID: 791965059}
   - component: {fileID: 791965061}
   - component: {fileID: 791965062}
+  - component: {fileID: 791965063}
   m_Layer: 0
   m_Name: Square 3 (1)
   m_TagString: Untagged
@@ -16471,7 +16568,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -16495,7 +16592,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791965058}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -16514,6 +16611,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &791965063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791965058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &809177955
 GameObject:
   m_ObjectHideFlags: 0
@@ -16546,8 +16664,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 0}
   hand: {fileID: 0}
+  time1: {fileID: 0}
+  carrot: {fileID: 0}
+  green_pepper: {fileID: 0}
+  pump: {fileID: 0}
+  straw: {fileID: 0}
+  w_carrot: {fileID: 0}
+  watermelon: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!61 &809177957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16691,168 +16816,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &825481588
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 825481590}
-  - component: {fileID: 825481589}
-  - component: {fileID: 825481591}
-  - component: {fileID: 825481592}
-  m_Layer: 0
-  m_Name: Square 0(3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!212 &825481589
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825481588}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -715820025
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -11785465, guid: 308d07560997ec446a029ad8d7eb9028, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &825481590
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825481588}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.34249878, y: 0.26243353, z: 0.009055431}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 545423278}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &825481591
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825481588}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!50 &825481592
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825481588}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &873183665
 GameObject:
   m_ObjectHideFlags: 0
@@ -16865,6 +16828,7 @@ GameObject:
   - component: {fileID: 873183666}
   - component: {fileID: 873183668}
   - component: {fileID: 873183669}
+  - component: {fileID: 873183670}
   m_Layer: 0
   m_Name: Square 5 (3)
   m_TagString: Untagged
@@ -16972,7 +16936,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -16996,7 +16960,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873183665}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -17015,6 +16979,211 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &873183670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873183665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
+--- !u!1 &913052337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 913052338}
+  - component: {fileID: 913052342}
+  - component: {fileID: 913052341}
+  - component: {fileID: 913052340}
+  - component: {fileID: 913052339}
+  m_Layer: 0
+  m_Name: Square 0(1) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &913052338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913052337}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.84, y: 0.26243353, z: 0.009055431}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545423278}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &913052339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913052337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
+--- !u!61 &913052340
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913052337}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &913052341
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913052337}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!212 &913052342
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913052337}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -715820025
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &931659479
 GameObject:
   m_ObjectHideFlags: 0
@@ -17030,7 +17199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &931659480
 Transform:
   m_ObjectHideFlags: 0
@@ -17067,7 +17236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &945405037
 Transform:
   m_ObjectHideFlags: 0
@@ -17089,6 +17258,190 @@ Transform:
   - {fileID: 1852939842}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1028088313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1028088314}
+  - component: {fileID: 1028088318}
+  - component: {fileID: 1028088317}
+  - component: {fileID: 1028088316}
+  - component: {fileID: 1028088315}
+  m_Layer: 0
+  m_Name: Square 0(1) (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1028088314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028088313}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: 0.26243353, z: 0.009055431}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545423278}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1028088315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028088313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
+--- !u!61 &1028088316
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028088313}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &1028088317
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028088313}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!212 &1028088318
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028088313}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -715820025
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1063469561
 GameObject:
   m_ObjectHideFlags: 0
@@ -17101,6 +17454,7 @@ GameObject:
   - component: {fileID: 1063469562}
   - component: {fileID: 1063469564}
   - component: {fileID: 1063469565}
+  - component: {fileID: 1063469566}
   m_Layer: 0
   m_Name: Square 2 (3)
   m_TagString: Untagged
@@ -17208,7 +17562,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -17232,7 +17586,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063469561}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -17251,6 +17605,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1063469566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063469561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1077585188
 GameObject:
   m_ObjectHideFlags: 0
@@ -17263,6 +17638,7 @@ GameObject:
   - component: {fileID: 1077585189}
   - component: {fileID: 1077585191}
   - component: {fileID: 1077585192}
+  - component: {fileID: 1077585193}
   m_Layer: 0
   m_Name: Square 7 (4)
   m_TagString: Untagged
@@ -17370,7 +17746,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -17394,7 +17770,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077585188}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -17413,6 +17789,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1077585193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077585188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1099560027
 GameObject:
   m_ObjectHideFlags: 0
@@ -17587,6 +17984,7 @@ GameObject:
   - component: {fileID: 1165788950}
   - component: {fileID: 1165788952}
   - component: {fileID: 1165788953}
+  - component: {fileID: 1165788954}
   m_Layer: 0
   m_Name: Square 5 (2)
   m_TagString: Untagged
@@ -17694,7 +18092,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -17718,7 +18116,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165788949}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -17737,6 +18135,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1165788954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165788949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1210848152
 GameObject:
   m_ObjectHideFlags: 0
@@ -17749,6 +18168,7 @@ GameObject:
   - component: {fileID: 1210848153}
   - component: {fileID: 1210848155}
   - component: {fileID: 1210848156}
+  - component: {fileID: 1210848157}
   m_Layer: 0
   m_Name: Square 8 (1)
   m_TagString: Untagged
@@ -17856,7 +18276,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -17880,7 +18300,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210848152}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -17899,6 +18319,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1210848157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210848152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1230624854
 GameObject:
   m_ObjectHideFlags: 0
@@ -17911,6 +18352,7 @@ GameObject:
   - component: {fileID: 1230624855}
   - component: {fileID: 1230624857}
   - component: {fileID: 1230624858}
+  - component: {fileID: 1230624859}
   m_Layer: 0
   m_Name: Square 3 (3)
   m_TagString: Untagged
@@ -18018,7 +18460,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -18042,7 +18484,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230624854}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -18061,6 +18503,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1230624859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230624854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1242120362
 GameObject:
   m_ObjectHideFlags: 0
@@ -18073,6 +18536,7 @@ GameObject:
   - component: {fileID: 1242120363}
   - component: {fileID: 1242120365}
   - component: {fileID: 1242120366}
+  - component: {fileID: 1242120367}
   m_Layer: 0
   m_Name: Square 6 (1)
   m_TagString: Untagged
@@ -18180,7 +18644,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -18204,7 +18668,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242120362}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -18223,168 +18687,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1267784489
-GameObject:
+--- !u!114 &1242120367
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1267784491}
-  - component: {fileID: 1267784490}
-  - component: {fileID: 1267784492}
-  - component: {fileID: 1267784493}
-  m_Layer: 0
-  m_Name: Square 0(2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!212 &1267784490
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267784489}
+  m_GameObject: {fileID: 1242120362}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -715820025
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -11785465, guid: 308d07560997ec446a029ad8d7eb9028, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1267784491
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267784489}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8424988, y: 0.26243353, z: 0.009055431}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 545423278}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1267784492
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267784489}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!50 &1267784493
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267784489}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1425209067
 GameObject:
   m_ObjectHideFlags: 0
@@ -18395,8 +18718,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1425209069}
   - component: {fileID: 1425209068}
-  - component: {fileID: 1425209070}
   - component: {fileID: 1425209071}
+  - component: {fileID: 1425209070}
+  - component: {fileID: 1425209072}
   m_Layer: 0
   m_Name: Square 1
   m_TagString: Untagged
@@ -18504,7 +18828,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -18528,7 +18852,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425209067}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -18547,6 +18871,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1425209072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425209067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1432914893
 GameObject:
   m_ObjectHideFlags: 0
@@ -18579,8 +18924,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 0}
   hand: {fileID: 0}
+  time1: {fileID: 0}
+  carrot: {fileID: 0}
+  green_pepper: {fileID: 0}
+  pump: {fileID: 0}
+  straw: {fileID: 0}
+  w_carrot: {fileID: 0}
+  watermelon: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!61 &1432914895
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18739,7 +19091,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1453345248
 Transform:
   m_ObjectHideFlags: 0
@@ -18793,8 +19145,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 0}
   hand: {fileID: 0}
+  time1: {fileID: 0}
+  carrot: {fileID: 0}
+  green_pepper: {fileID: 0}
+  pump: {fileID: 0}
+  straw: {fileID: 0}
+  w_carrot: {fileID: 0}
+  watermelon: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!61 &1454534505
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19035,6 +19394,7 @@ GameObject:
   - component: {fileID: 1575185223}
   - component: {fileID: 1575185225}
   - component: {fileID: 1575185226}
+  - component: {fileID: 1575185227}
   m_Layer: 0
   m_Name: Square 2 (2)
   m_TagString: Untagged
@@ -19142,7 +19502,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -19166,7 +19526,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575185222}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -19185,6 +19545,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1575185227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575185222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1585773056
 GameObject:
   m_ObjectHideFlags: 0
@@ -19267,7 +19648,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.694313, y: -0.0567708}
+  m_Offset: {x: -14.286491, y: -0.056770325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -19277,7 +19658,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 58.997925, y: 27.68164}
+  m_Size: {x: 25.036316, y: 27.68164}
   m_EdgeRadius: 0
 --- !u!1 &1646616804
 GameObject:
@@ -19291,6 +19672,7 @@ GameObject:
   - component: {fileID: 1646616805}
   - component: {fileID: 1646616807}
   - component: {fileID: 1646616808}
+  - component: {fileID: 1646616809}
   m_Layer: 0
   m_Name: Square 8 (2)
   m_TagString: Untagged
@@ -19398,7 +19780,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -19422,7 +19804,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646616804}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -19441,6 +19823,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1646616809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646616804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1652143681
 GameObject:
   m_ObjectHideFlags: 0
@@ -19453,6 +19856,7 @@ GameObject:
   - component: {fileID: 1652143682}
   - component: {fileID: 1652143684}
   - component: {fileID: 1652143685}
+  - component: {fileID: 1652143686}
   m_Layer: 0
   m_Name: Square 6 (2)
   m_TagString: Untagged
@@ -19560,7 +19964,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -19584,7 +19988,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652143681}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -19603,6 +20007,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1652143686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652143681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1655858843
 GameObject:
   m_ObjectHideFlags: 0
@@ -19615,6 +20040,7 @@ GameObject:
   - component: {fileID: 1655858844}
   - component: {fileID: 1655858846}
   - component: {fileID: 1655858847}
+  - component: {fileID: 1655858848}
   m_Layer: 0
   m_Name: Square 4 (1)
   m_TagString: Untagged
@@ -19722,7 +20148,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -19746,7 +20172,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655858843}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -19765,6 +20191,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1655858848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655858843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1673373513
 GameObject:
   m_ObjectHideFlags: 0
@@ -19780,7 +20227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1673373514
 Transform:
   m_ObjectHideFlags: 0
@@ -19802,6 +20249,190 @@ Transform:
   - {fileID: 421046393}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1685852806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1685852807}
+  - component: {fileID: 1685852811}
+  - component: {fileID: 1685852810}
+  - component: {fileID: 1685852809}
+  - component: {fileID: 1685852808}
+  m_Layer: 0
+  m_Name: Square 0(1) (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1685852807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685852806}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.42, y: 0.26243353, z: 0.009055431}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545423278}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1685852808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685852806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
+--- !u!61 &1685852809
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685852806}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &1685852810
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685852806}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!212 &1685852811
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685852806}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -715820025
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1717287597
 GameObject:
   m_ObjectHideFlags: 0
@@ -19814,6 +20445,7 @@ GameObject:
   - component: {fileID: 1717287598}
   - component: {fileID: 1717287600}
   - component: {fileID: 1717287601}
+  - component: {fileID: 1717287602}
   m_Layer: 0
   m_Name: Square 1 (2)
   m_TagString: Untagged
@@ -19921,7 +20553,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -19945,7 +20577,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717287597}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -19964,6 +20596,211 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1717287602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717287597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
+--- !u!1 &1738787717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1738787718}
+  - component: {fileID: 1738787722}
+  - component: {fileID: 1738787721}
+  - component: {fileID: 1738787720}
+  - component: {fileID: 1738787719}
+  m_Layer: 0
+  m_Name: Square 0(1) (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1738787718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738787717}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.54, y: 0.26243353, z: 0.009055431}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545423278}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738787719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738787717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
+--- !u!61 &1738787720
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738787717}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &1738787721
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738787717}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!212 &1738787722
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738787717}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -715820025
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1750048207
 GameObject:
   m_ObjectHideFlags: 0
@@ -19979,7 +20816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1750048208
 Transform:
   m_ObjectHideFlags: 0
@@ -20175,6 +21012,7 @@ GameObject:
   - component: {fileID: 1772281885}
   - component: {fileID: 1772281887}
   - component: {fileID: 1772281888}
+  - component: {fileID: 1772281889}
   m_Layer: 0
   m_Name: Square 8 (3)
   m_TagString: Untagged
@@ -20282,7 +21120,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -20306,7 +21144,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772281884}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -20325,6 +21163,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1772281889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772281884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!114 &1779184894 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7266727039941952789, guid: dd9b2136b5f047843a2ac4ad7b0b0f4a, type: 3}
@@ -20348,6 +21207,7 @@ GameObject:
   - component: {fileID: 1825083911}
   - component: {fileID: 1825083913}
   - component: {fileID: 1825083914}
+  - component: {fileID: 1825083915}
   m_Layer: 0
   m_Name: Square 5
   m_TagString: Untagged
@@ -20455,7 +21315,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -20479,7 +21339,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825083910}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -20498,6 +21358,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1825083915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825083910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1834735407
 GameObject:
   m_ObjectHideFlags: 0
@@ -24233,6 +25114,7 @@ GameObject:
   - component: {fileID: 1867700622}
   - component: {fileID: 1867700624}
   - component: {fileID: 1867700625}
+  - component: {fileID: 1867700626}
   m_Layer: 0
   m_Name: Square 7 (2)
   m_TagString: Untagged
@@ -24340,7 +25222,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -24364,7 +25246,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867700621}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -24383,6 +25265,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1867700626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867700621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1868486876
 GameObject:
   m_ObjectHideFlags: 0
@@ -24395,6 +25298,7 @@ GameObject:
   - component: {fileID: 1868486877}
   - component: {fileID: 1868486879}
   - component: {fileID: 1868486880}
+  - component: {fileID: 1868486881}
   m_Layer: 0
   m_Name: Square 7 (3)
   m_TagString: Untagged
@@ -24502,7 +25406,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -24526,7 +25430,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868486876}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -24545,6 +25449,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1868486881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868486876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1896326415
 GameObject:
   m_ObjectHideFlags: 0
@@ -24894,6 +25819,7 @@ GameObject:
   - component: {fileID: 1947270757}
   - component: {fileID: 1947270759}
   - component: {fileID: 1947270760}
+  - component: {fileID: 1947270761}
   m_Layer: 0
   m_Name: Square 6
   m_TagString: Untagged
@@ -25001,7 +25927,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -25025,7 +25951,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947270756}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -25044,6 +25970,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1947270761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947270756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1971857382
 GameObject:
   m_ObjectHideFlags: 0
@@ -25056,6 +26003,7 @@ GameObject:
   - component: {fileID: 1971857383}
   - component: {fileID: 1971857385}
   - component: {fileID: 1971857386}
+  - component: {fileID: 1971857387}
   m_Layer: 0
   m_Name: Square 4 (3)
   m_TagString: Untagged
@@ -25163,7 +26111,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -25187,7 +26135,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971857382}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -25206,6 +26154,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1971857387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971857382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &1980956831
 GameObject:
   m_ObjectHideFlags: 0
@@ -25381,8 +26350,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newSprite: {fileID: 0}
   hand: {fileID: 0}
+  time1: {fileID: 0}
+  carrot: {fileID: 0}
+  green_pepper: {fileID: 0}
+  pump: {fileID: 0}
+  straw: {fileID: 0}
+  w_carrot: {fileID: 0}
+  watermelon: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!1 &1983785768
 GameObject:
   m_ObjectHideFlags: 0
@@ -25395,6 +26371,7 @@ GameObject:
   - component: {fileID: 1983785769}
   - component: {fileID: 1983785771}
   - component: {fileID: 1983785772}
+  - component: {fileID: 1983785773}
   m_Layer: 0
   m_Name: Square 8
   m_TagString: Untagged
@@ -25502,7 +26479,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -25526,7 +26503,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983785768}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -25545,6 +26522,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1983785773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983785768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1001 &2035575583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25643,6 +26641,7 @@ GameObject:
   - component: {fileID: 2036079785}
   - component: {fileID: 2036079787}
   - component: {fileID: 2036079788}
+  - component: {fileID: 2036079789}
   m_Layer: 0
   m_Name: Square 4 (2)
   m_TagString: Untagged
@@ -25750,7 +26749,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -25774,7 +26773,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036079784}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -25793,6 +26792,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2036079789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036079784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &2057059721
 GameObject:
   m_ObjectHideFlags: 0
@@ -25808,7 +26828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2057059722
 Transform:
   m_ObjectHideFlags: 0
@@ -25842,6 +26862,7 @@ GameObject:
   - component: {fileID: 2077428386}
   - component: {fileID: 2077428388}
   - component: {fileID: 2077428389}
+  - component: {fileID: 2077428390}
   m_Layer: 0
   m_Name: Square 3 (2)
   m_TagString: Untagged
@@ -25949,7 +26970,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -25973,7 +26994,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077428385}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -25992,6 +27013,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2077428390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077428385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b18f71b59e6474489c9d23f25eb33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 11400000, guid: bf19542f7e1224645bb4bbf5f81e8e84, type: 2}
+  time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  carrot: {fileID: 11400000, guid: d0544c322040906428de28eaa45d6ff4, type: 2}
+  green_pepper: {fileID: 11400000, guid: 55ca204f57988504a89bb69412dfc2d4, type: 2}
+  pump: {fileID: 11400000, guid: d4ee0b84041bbbc489e4866650358e93, type: 2}
+  straw: {fileID: 11400000, guid: fed9ed9f8d0d4044188ff6d7680bf141, type: 2}
+  w_carrot: {fileID: 11400000, guid: 32a0d515f829b434b925cff0f7fbe9bc, type: 2}
+  watermelon: {fileID: 11400000, guid: c83b640ffdd326a498b502e9c3c59c0d, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
 --- !u!1 &2079962762
 GameObject:
   m_ObjectHideFlags: 0
