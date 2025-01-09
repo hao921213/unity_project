@@ -16,7 +16,7 @@ MonoBehaviour:
   item_name: chicken_l2
   item_image: {fileID: -1374752067, guid: e5e9ec84ae3c1da46a6f0621896c0968, type: 3}
   price: 1000
-  held: 1
+  held: 0
   iteminfo: 
   prefab: {fileID: 1900284182535163563, guid: fc84f6c0ec5325b4b84eca4f47574e5a, type: 3}
   water: 2
