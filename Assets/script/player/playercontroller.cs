@@ -16,7 +16,10 @@ public class playercontroller : MonoBehaviour
     private Vector2 movement; // 儲存移動方向
     public player1 hp;
     public health_bar health_change;
-    private int direction=0;
+    private int direction = 0;
+
+    public float invincibleTime = 2f; // 無敵時間（秒）
+    private bool isInvincible = false; // 是否處於無敵狀態
 
     void Start()
     {
@@ -40,19 +43,39 @@ public class playercontroller : MonoBehaviour
         moveInput(); // 處理輸入  
         use();
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "enemy1")
-        {
-            health_change.TakeDamage(1);
-            print(hp.health);
-            if (hp.health == 0)
-            {
-                SceneManager.LoadScene("Home");
-                hp.health = 10;
-            }
-        }
-    }
+   
+    //private void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    if(collision.gameObject.tag == "enemy1") 
+    //    {
+    //        if (!isInvincible) //非無敵才會扣血
+    //        {
+    //            health_change.TakeDamage(0.01f);
+    //            print("玩家血量" + hp.health);
+
+    //            if (hp.health <= 0)
+    //            {
+    //                SceneManager.LoadScene("Home");
+    //                hp.health = 10;
+    //            }
+    //        }
+    //        else
+    //        {
+    //            StartCoroutine(InvincibleCoroutine());
+    //        }
+    //    }
+    //}
+
+    //private System.Collections.IEnumerator InvincibleCoroutine()
+    //{
+    //    isInvincible = true; // 設置為無敵
+    //    print("無敵開");
+    //    yield return new WaitForSeconds(invincibleTime); // 等待無敵時間結束
+    //    isInvincible = false; // 無敵結束
+    //    print("無敵關");
+    //}
+
+
     void FixedUpdate()
     {
         TryMove(); // 嘗試移動玩家
@@ -65,31 +88,67 @@ public class playercontroller : MonoBehaviour
         {
             movement.x = 1f;
             transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
-            animator.SetInteger("Status", 1);
-            direction=3;
+
+            if (hand.item != null && hand.item.item_name == "torch")
+            {
+                animator.SetInteger("Status", 7);
+            }
+            else
+            {
+                animator.SetInteger("Status", 1);
+            }
+            direction =3;
         }
         else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) // 左
         {
             movement.x = -1f;
             transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
             direction=1;
-            animator.SetInteger("Status", 1);
+            if (hand.item != null && hand.item.item_name == "torch")
+            {
+                animator.SetInteger("Status", 7);
+            }
+            else
+            {
+                animator.SetInteger("Status", 1);
+            }
         }
         else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) // 上
         {
             movement.y = 1f;
-            animator.SetInteger("Status", 2);
-            direction=2;
+            if (hand.item != null && hand.item.item_name == "torch")
+            {
+                animator.SetInteger("Status", 6);
+            }
+            else
+            {
+                animator.SetInteger("Status", 2);
+            }
+            direction =2;
         }
         else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) // 下
         {
             movement.y = -1f;
-            animator.SetInteger("Status", 3);
-            direction=0;
+            if (hand.item != null && hand.item.item_name == "torch")
+            {
+                animator.SetInteger("Status", 5);
+            }
+            else
+            {
+                animator.SetInteger("Status", 3);
+            }
+            direction =0;
         }
         else
         {
-            animator.SetInteger("Status", 0);
+            if (hand.item!=null && hand.item.item_name == "torch")
+            {
+                animator.SetInteger("Status", 4);
+            }
+            else {
+                animator.SetInteger("Status", 0);
+            }
+            
         }
     }
 
@@ -131,6 +190,8 @@ public class playercontroller : MonoBehaviour
         goGarden(coll);
         gofishing(coll);
         gosforest(coll);
+        gobed(coll);
+        
     }
 
     void goshop(Collider2D coll)
@@ -189,6 +250,14 @@ public class playercontroller : MonoBehaviour
         }
     }
 
+    void gobed(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "bed_Portal")
+        {
+            coll.gameObject.GetComponent<bed_Portal>().ChangeScene_bed();
+        }
+    }
+
     public void use(){
         if(Input.GetKeyDown(KeyCode.E) && hand.item==null){
             attack();
@@ -196,10 +265,11 @@ public class playercontroller : MonoBehaviour
         else if(Input.GetKeyDown(KeyCode.E) && hand.item.item_name=="sword"){
             attack();    
         }
-    } 
+    }
+
     
     void attack(){
-        if(hand.item==null){
+        if(hand.item == null){
             
             switch(direction){
                 case 0:

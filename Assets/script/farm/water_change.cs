@@ -47,7 +47,7 @@ public class water_change : MonoBehaviour
                 }
                 for(int j=0;j<farms[i].itemlist.Count;j++){
                     if(farms[i].itemlist[j].item_name!="null"){
-                        all_water.waters[i]-=(float)farms[j].itemlist[j].water;
+                        all_water.waters[i]-=(float)farms[i].itemlist[j].water;
                     }
                 }
             }

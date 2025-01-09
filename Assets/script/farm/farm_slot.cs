@@ -5,7 +5,6 @@ public class farm_slot : MonoBehaviour
 {
     public Image item_image;
     private item currentItem;
-
     public void SetupSlot(item itemData)
     {
         if (itemData.item_image == null)
@@ -21,6 +20,6 @@ public class farm_slot : MonoBehaviour
     public void onClicked()
     {
         // 通知商店控制器選中該商品
-        FindObjectOfType<farm_controller>().SetSelectedItem(currentItem);
+        FindObjectOfType<farm_controller>().SetSelectedItem(gameObject,currentItem);
     }
 }
