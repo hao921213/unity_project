@@ -18,5 +18,5 @@ MonoBehaviour:
   price: 1000
   held: 1
   iteminfo: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 4202859204067847031, guid: 9f8fd8c070d38924c942f9e2031b27f2, type: 3}
   water: 7
