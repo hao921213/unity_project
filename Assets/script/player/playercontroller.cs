@@ -1,3 +1,5 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,6 +18,7 @@ public class playercontroller : MonoBehaviour
     private Vector2 movement; // 儲存移動方向
     public player1 hp;
     public health_bar health_change;
+    public bag player_bag;
     private int direction=0;
 
     void Start()
@@ -239,8 +242,12 @@ public class playercontroller : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E) && hand.item==null){
             attack();
         }
-        else if(Input.GetKeyDown(KeyCode.E) && hand.item.item_name=="sword"){
+        else if(Input.GetKeyDown(KeyCode.E) && hand.item != null&& hand.item.item_name=="sword"){
             attack();    
+        }
+        else if(Input.GetKeyDown(KeyCode.E) && hand.item != null && (hand.item.tag == "roast_meat" || hand.item.tag == "crop"))
+        {
+            eat();
         }
     }
 
@@ -282,6 +289,21 @@ public class playercontroller : MonoBehaviour
                     animator.SetInteger("sword",3);
                     break;
             }
+        }
+    }
+    void eat()
+    {
+        hand.item.held -= 1;
+        bag_controller.RefreshItem();
+        switch (hand.item.tag) {
+            case "roast_meat":
+                health_change.Heal(5);
+                Debug.Log($"+5");
+                break;
+            case "crop":
+                health_change.Heal(2);
+                Debug.Log("+2");
+                break;
         }
     }
     

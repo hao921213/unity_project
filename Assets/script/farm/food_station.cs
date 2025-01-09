@@ -12,7 +12,7 @@ public class food_station : MonoBehaviour
 
     private void Update()
     {
-        if (player_in == 1 && hand.item.tag == "crop" && Input.GetKeyDown(KeyCode.E))
+        if (player_in == 1 && hand.item!=null && hand.item.tag == "crop" && Input.GetKeyDown(KeyCode.E))
         {
             water.waters[index] += 20;
             re.flipX = true;
