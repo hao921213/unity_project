@@ -18,5 +18,7 @@ MonoBehaviour:
   price: 1000
   held: 1
   iteminfo: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 4957763255372535643, guid: 5d0cc94031ce90f44a6f1585133e639a, type: 3}
   water: 7
+  food: 5
+  grow: 7

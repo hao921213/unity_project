@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "new_item", menuName = "bag/new_item")]
@@ -12,4 +13,6 @@ public class item : ScriptableObject
     public string iteminfo;
     public GameObject prefab;
     public int water;
+    public int food;
+    public int grow;
 }

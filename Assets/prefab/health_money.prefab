@@ -965,6 +965,7 @@ GameObject:
   - component: {fileID: 3883669299791584816}
   - component: {fileID: 4321668576065898376}
   - component: {fileID: 2964167812608066063}
+  - component: {fileID: 1689685138396813646}
   m_Layer: 5
   m_Name: time
   m_TagString: Untagged
@@ -1047,6 +1048,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 4321668576065898376}
   time1: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
+  maxIntensity: 1
+  minIntensity: 0.003
+  morning: 3
+  evening: 18
+  change1: 0.0001
+  change2: 0.0002
+--- !u!114 &1689685138396813646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5131928547998287191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98fa9eccec981da4185ef358e02a2ec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  farm1: {fileID: 11400000, guid: c8a6ba9c6e683d148b733587a1fa1efc, type: 2}
+  farm2: {fileID: 11400000, guid: ae06b54d681b0884aad42c0263ea51a3, type: 2}
+  farm3: {fileID: 11400000, guid: 0a489feb6348c9745b089b134a87e235, type: 2}
+  farm4: {fileID: 11400000, guid: dd568030c73f64649a08f914e3208908, type: 2}
+  farm5: {fileID: 11400000, guid: f71dfc027bd30864b832828b9b8f9ccd, type: 2}
+  farm6: {fileID: 11400000, guid: 0680fa7eb96fd5440adc3da84d8c83d1, type: 2}
+  grow1: {fileID: 11400000, guid: b9fd7f3ab0047ed41a001dc85ead5868, type: 2}
+  grow2: {fileID: 11400000, guid: feac24910d9c31a4f8803d8525fa8a41, type: 2}
+  grow3: {fileID: 11400000, guid: 035260dc25ff0cb4485c6fbc1097b00d, type: 2}
+  grow4: {fileID: 11400000, guid: f8f4fac0378f8fc41a43fecb145a4be6, type: 2}
+  grow5: {fileID: 11400000, guid: 56d314869631cd446968411883dad404, type: 2}
+  grow6: {fileID: 11400000, guid: 3ebc4c05151941a43933e00417d2c69d, type: 2}
+  farm_controller1: {fileID: 0}
+  farm_controller2: {fileID: 0}
+  farm_controller3: {fileID: 0}
+  farm_controller4: {fileID: 0}
+  farm_controller5: {fileID: 0}
+  farm_controller6: {fileID: 0}
+  time: {fileID: 11400000, guid: f7d427570abc2c24fab74bc3821c0bbf, type: 2}
 --- !u!1 &6708575882621218826
 GameObject:
   m_ObjectHideFlags: 0

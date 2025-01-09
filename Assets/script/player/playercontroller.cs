@@ -88,31 +88,67 @@ public class playercontroller : MonoBehaviour
         {
             movement.x = 1f;
             transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
-            animator.SetInteger("Status", 1);
-            direction=3;
+
+            if (hand.item != null && hand.item.item_name == "torch")
+            {
+                animator.SetInteger("Status", 7);
+            }
+            else
+            {
+                animator.SetInteger("Status", 1);
+            }
+            direction =3;
         }
         else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) // 左
         {
             movement.x = -1f;
             transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
             direction=1;
-            animator.SetInteger("Status", 1);
+            if (hand.item != null && hand.item.item_name == "torch")
+            {
+                animator.SetInteger("Status", 7);
+            }
+            else
+            {
+                animator.SetInteger("Status", 1);
+            }
         }
         else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) // 上
         {
             movement.y = 1f;
-            animator.SetInteger("Status", 2);
-            direction=2;
+            if (hand.item != null && hand.item.item_name == "torch")
+            {
+                animator.SetInteger("Status", 6);
+            }
+            else
+            {
+                animator.SetInteger("Status", 2);
+            }
+            direction =2;
         }
         else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) // 下
         {
             movement.y = -1f;
-            animator.SetInteger("Status", 3);
-            direction=0;
+            if (hand.item != null && hand.item.item_name == "torch")
+            {
+                animator.SetInteger("Status", 5);
+            }
+            else
+            {
+                animator.SetInteger("Status", 3);
+            }
+            direction =0;
         }
         else
         {
-            animator.SetInteger("Status", 0);
+            if (hand.item!=null && hand.item.item_name == "torch")
+            {
+                animator.SetInteger("Status", 4);
+            }
+            else {
+                animator.SetInteger("Status", 0);
+            }
+            
         }
     }
 
@@ -154,6 +190,8 @@ public class playercontroller : MonoBehaviour
         goGarden(coll);
         gofishing(coll);
         gosforest(coll);
+        gobed(coll);
+        
     }
 
     void goshop(Collider2D coll)
@@ -212,6 +250,14 @@ public class playercontroller : MonoBehaviour
         }
     }
 
+    void gobed(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "bed_Portal")
+        {
+            coll.gameObject.GetComponent<bed_Portal>().ChangeScene_bed();
+        }
+    }
+
     public void use(){
         if(Input.GetKeyDown(KeyCode.E) && hand.item==null){
             attack();
@@ -219,7 +265,8 @@ public class playercontroller : MonoBehaviour
         else if(Input.GetKeyDown(KeyCode.E) && hand.item.item_name=="sword"){
             attack();    
         }
-    } 
+    }
+
     
     void attack(){
         if(hand.item == null){

@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: arrow
   m_EditorClassIdentifier: 
   tag: 
-  item_name: 
+  item_name: arrow
   item_image: {fileID: 896295810, guid: d96238aedd3f22c43a162b8f78ebc1e3, type: 3}
   price: 100
   held: 1
   iteminfo: 
   prefab: {fileID: 0}
+  water: 0
