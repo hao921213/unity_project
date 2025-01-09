@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: hay
   m_EditorClassIdentifier: 
   tag: 
-  item_name: 
+  item_name: hay
   item_image: {fileID: -1941000334, guid: 0f9ec54610ef012458721b25dbd89e22, type: 3}
   price: 100
   held: 1
   iteminfo: 
   prefab: {fileID: 0}
+  water: 0
