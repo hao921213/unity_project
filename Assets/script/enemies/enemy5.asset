@@ -9,17 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a999a7d50a94b94d89866819650bad9, type: 3}
-  m_Name: time
+  m_Script: {fileID: 11500000, guid: 775b58cbee3d3304a815f022b40941a7, type: 3}
+  m_Name: enemy5
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  count: 12.164833
-  hour: 8
-  day: 0
-  intensity: 1.0000716
-=======
-  count: 7.86617
-  hour: 11
-  day: 7
-  intensity: 0.21791582
->>>>>>> Stashed changes
+  enemy: {fileID: 5348635202126231720, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
+  item: {fileID: 11400000, guid: 35a8712142e64c94496aa7e14ee29746, type: 2}
