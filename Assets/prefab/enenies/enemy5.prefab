@@ -220,4 +220,10 @@ MonoBehaviour:
   Hp: 15
   attack: {fileID: 0}
   knockbackForce: 40
+  ed: {fileID: 11400000, guid: 4633f6da60835f94f98e0e95b04df898, type: 2}
+  ed2: {fileID: 11400000, guid: bfd9fa5ba7d63a441aa95550244310f3, type: 2}
+  ed3: {fileID: 11400000, guid: ddb4d099354d1b5418ac1871d2f25d3a, type: 2}
+  ed4: {fileID: 11400000, guid: 59d72baf9a6b0f14f840514a6b073593, type: 2}
+  ed5: {fileID: 11400000, guid: d73ba3b404295ab42bf6b15456cd5e91, type: 2}
   money: {fileID: 11400000, guid: 7e8379af841db5344a10b97462880697, type: 2}
+  player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}

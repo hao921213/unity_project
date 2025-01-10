@@ -2,13 +2,20 @@ using UnityEngine;
 
 public class Enemy_Hp : MonoBehaviour
 {
-    public int Hp = 10; // ªì©l¦å¶q
+    public int Hp = 10; // ï¿½ï¿½lï¿½ï¿½q
     public PlayerAttack attack;
-    public float knockbackForce = 5f; //³QÀ»­¸ªº¤O¶q
+    public float knockbackForce = 5f; //ï¿½Qï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½q
     private Rigidbody2D rb;
     int count = 0;
 
+    public enemy_data ed;
+    public enemy_data ed2;
+    public enemy_data ed3;
+    public enemy_data ed4;
+    public enemy_data ed5;
     public player1 money;
+
+    public bag player_bag;
 
     void Start()
     {
@@ -17,41 +24,46 @@ public class Enemy_Hp : MonoBehaviour
 
     public void TakeDamage(int damage, Vector2 knockbackDirection)
     {
-        Hp -= damage; // ¦©¦å
-        Debug.Log("©Çª«¦å¶q³Ñ¾l¡G" + Hp);
+        Hp -= damage; // ï¿½ï¿½ï¿½ï¿½
+        Debug.Log("ï¿½Çªï¿½ï¿½ï¿½qï¿½Ñ¾lï¿½G" + Hp);
 
-        // ¦pªG¦å¶q¤j©ó 0¡A¬I¥[À»°h®ÄªG
+        // ï¿½pï¿½Gï¿½ï¿½qï¿½jï¿½ï¿½ 0ï¿½Aï¿½Iï¿½[ï¿½ï¿½ï¿½hï¿½ÄªG
         if (Input.GetKeyDown(KeyCode.E) || Hp > 0)
         {
             rb.AddForce(knockbackDirection.normalized * knockbackForce, ForceMode2D.Impulse);
         }
         if(Hp <= 0)
         {
-            Die(); // ¦å¶qÂk¹s®É¦º¤`
-            if(this.gameObject.name == "enemy1")
+            Die(); // ï¿½ï¿½qï¿½kï¿½sï¿½É¦ï¿½ï¿½`
+            if(this.gameObject.name == "enemy1" || this.gameObject.name == "enemy1(Clone)" )
             {
-                money.money += 1000;
+                money.money += 20;
                 print("money" + money.money);
+                player_get(ed.item);
             }
-            if (this.gameObject.name == "enemy2")
+            if (this.gameObject.name == "enemy2"|| this.gameObject.name == "enemy2(Clone)")
             {
-                money.money += 500;
+                money.money += 40;
                 print("money" + money.money);
+                player_get(ed2.item);
             }
-            if (this.gameObject.name == "enemy3")
+            if (this.gameObject.name == "enemy3"|| this.gameObject.name == "enemy3(Clone)")
             {
-                money.money += 1500;
+                money.money += 60;
                 print("money" + money.money);
+                player_get(ed3.item);
             }
-            if (this.gameObject.name == "enemy4")
+            if (this.gameObject.name == "enemy4"|| this.gameObject.name == "enemy4(Clone)")
             {
-                money.money += 300;
+                money.money += 80;
                 print("money" + money.money);
+                player_get(ed4.item);
             }
-            if (this.gameObject.name == "enemy5")
+            if (this.gameObject.name == "enemy5"|| this.gameObject.name == "enemy4(Clone)")
             {
-                money.money += 2000;
+                money.money += 100;
                 print("money" + money.money);
+                player_get(ed5.item);
             }
         }
 
@@ -59,7 +71,34 @@ public class Enemy_Hp : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("©Çª«¦º¤`¡G" + gameObject.name);
-        Destroy(gameObject); // ¾P·´©Çª«
+        Debug.Log("ï¿½Çªï¿½ï¿½ï¿½ï¿½`ï¿½G" + gameObject.name);
+        Destroy(gameObject); // ï¿½Pï¿½ï¿½ï¿½Çªï¿½
+    }
+
+    void player_get(item item){
+        Debug.Log(item);
+        int full=-1;
+        Debug.Log(player_bag.itemlist.Count);
+        for(int i=0;i<player_bag.itemlist.Count;i++){
+            if(player_bag.itemlist[i]==item){
+                player_bag.itemlist[i].held++;
+                bag_controller.RefreshItem();
+                return;
+            }
+        }
+        for(int i=0;i<player_bag.itemlist.Count;i++){
+            if(player_bag.itemlist[i]==null){
+                full=i;
+                break;
+            }
+        }
+        if(full!=-1){
+            player_bag.itemlist[full]=item;
+            bag_controller.RefreshItem();
+        }
+        else{
+            Debug.Log("èƒŒåŒ…å·²æ»¿");
+        }
+        return;
     }
 }

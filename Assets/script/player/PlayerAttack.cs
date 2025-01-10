@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public int damage = 1; // ¨C¦¸§ðÀ»ªº¶Ë®`
-    public float startTime = 1f; // §ðÀ»±Ò°Ê©µ¿ð
-    public float time = 0.001f; // §ðÀ»«ùÄò®É¶¡
+    public int damage = 1; // ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë®`
+    public float startTime = 1f; // ï¿½ï¿½ï¿½ï¿½ï¿½Ò°Ê©ï¿½ï¿½ï¿½
+    public float time = 0.001f; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¶ï¿½
 
     private Animator anim;
     private PolygonCollider2D Collider2D;
@@ -14,8 +14,8 @@ public class PlayerAttack : MonoBehaviour
     public player1 hp;
     public health_bar health_change;
 
-    public float invincibleTime = 0.5f; // µL¼Ä®É¶¡¡]¬í¡^
-    public bool isInvincible = false; // ¬O§_³B©óµL¼Äª¬ºA
+    public float invincibleTime = 0.5f; // ï¿½Lï¿½Ä®É¶ï¿½ï¿½]ï¿½ï¿½ï¿½^
+    public bool isInvincible = false; // ï¿½Oï¿½_ï¿½Bï¿½ï¿½Lï¿½Äªï¿½ï¿½A
 
     public Enemy_Hp h;
 
@@ -23,7 +23,7 @@ public class PlayerAttack : MonoBehaviour
     {
         anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         Collider2D = GetComponent<PolygonCollider2D>();
-        Collider2D.enabled = false; // ªì©l¸T¥Î§ðÀ»¸I¼²®Ø
+        Collider2D.enabled = false; // ï¿½ï¿½lï¿½Tï¿½Î§ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½
     }
 
     void Update()
@@ -36,35 +36,35 @@ public class PlayerAttack : MonoBehaviour
 
     void Attack1()
     {
-        Collider2D.enabled = true; // ±Ò¥Î§ðÀ»¸I¼²®Ø
+        Collider2D.enabled = true; // ï¿½Ò¥Î§ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½
         anim.SetTrigger("onattack");
         StartCoroutine(StartAttack());
     }
 
     IEnumerator StartAttack()
     {
-        yield return new WaitForSeconds(startTime); // ©µ¿ð±Ò°Ê
-        Collider2D.enabled = true; // ±Ò¥Î§ðÀ»¸I¼²®Ø
-        yield return new WaitForSeconds(time); // §ðÀ»«ùÄò®É¶¡
-        Collider2D.enabled = false; // ¸T¥Î§ðÀ»¸I¼²®Ø
+        yield return new WaitForSeconds(startTime); // ï¿½ï¿½ï¿½ï¿½Ò°ï¿½
+        Collider2D.enabled = true; // ï¿½Ò¥Î§ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½
+        yield return new WaitForSeconds(time); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¶ï¿½
+        Collider2D.enabled = false; // ï¿½Tï¿½Î§ï¿½ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("¸I¼²ÀË´ú¨ì¡G" + collision.gameObject.name);
+        Debug.Log("ï¿½Iï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½G" + collision.gameObject.name);
 
         if (collision.gameObject.CompareTag("enemy1"))
         {
-            Debug.Log("¸I¨ì¤F¼Ä¤H¡G" + collision.gameObject.name);
+            Debug.Log("ï¿½Iï¿½ï¿½Fï¿½Ä¤Hï¿½G" + collision.gameObject.name);
 
             Vector2 knockbackDirection = collision.transform.position - transform.position;
 
-            // ¹Á¸Õ¹ï¼Ä¤H¦©¦å
+            // ï¿½ï¿½ï¿½Õ¹ï¿½Ä¤Hï¿½ï¿½ï¿½ï¿½
             Enemy_Hp enemyHp = collision.gameObject.GetComponent<Enemy_Hp>();
             if (enemyHp != null)
             {
-                enemyHp.TakeDamage(damage, knockbackDirection);// ¶Ç»¼À»°h¤è¦V
-                Debug.Log("¼Ä¤H«ùÄò¦©¦å¡G" + h.Hp);
+                enemyHp.TakeDamage(damage, knockbackDirection);// ï¿½Ç»ï¿½ï¿½ï¿½ï¿½hï¿½ï¿½V
+                Debug.Log("ï¿½Ä¤Hï¿½ï¿½ï¿½ò¦©¦ï¿½G" + h.Hp);
                 //StartCoroutine(strong());
             }
         }
@@ -74,23 +74,23 @@ public class PlayerAttack : MonoBehaviour
     {
         if (!isInvincible)
         {
-            // ÀË´ú¬O§_¸I¨ì¼Ä¤H
+            // ï¿½Ë´ï¿½ï¿½Oï¿½_ï¿½Iï¿½ï¿½Ä¤H
             if (collision.gameObject.CompareTag("enemy1"))
             {
                 //Enemy_Hp enemyHp = collision.gameObject.GetComponent<Enemy_Hp>();
                 //if (enemyHp != null)
                 //{
-                //    enemyHp.TakeDamage(damage); // ¦©©Çª«¦å¶q
+                //    enemyHp.TakeDamage(damage); // ï¿½ï¿½ï¿½Çªï¿½ï¿½ï¿½q
                 //    StartCoroutine(strong());
                 //}
-                health_change.TakeDamage(0.01f); // ª±®a¦©¦å
-                Debug.Log("ª±®a¦å¶q¡G" + hp.health);
+                health_change.TakeDamage(0.1f); // ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½ï¿½
+                Debug.Log("ï¿½ï¿½ï¿½aï¿½ï¿½qï¿½G" + hp.health);
 
                 if (hp.health <= 0)
                 {
-                    Debug.Log("ª±®a¦º¤`¡A¤Á´«³õ´º");
+                    Debug.Log("ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½`ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
                     SceneManager.LoadScene("Home");
-                    hp.health = 10; // ­«¸m¦å¶q
+                    hp.health = 10; // ï¿½ï¿½ï¿½mï¿½ï¿½q
                 }
             }
         }
@@ -98,10 +98,10 @@ public class PlayerAttack : MonoBehaviour
 
     private IEnumerator strong()
     {
-        isInvincible = true; // ³]¸m¬°µL¼Ä
-        Debug.Log("µL¼Ä¶}");
-        yield return new WaitForSeconds(invincibleTime); // µ¥«ÝµL¼Ä®É¶¡µ²§ô
-        isInvincible = false; // µL¼Äµ²§ô
-        Debug.Log("µL¼ÄÃö");
+        isInvincible = true; // ï¿½]ï¿½mï¿½ï¿½ï¿½Lï¿½ï¿½
+        Debug.Log("ï¿½Lï¿½Ä¶}");
+        yield return new WaitForSeconds(invincibleTime); // ï¿½ï¿½ï¿½ÝµLï¿½Ä®É¶ï¿½ï¿½ï¿½ï¿½ï¿½
+        isInvincible = false; // ï¿½Lï¿½Äµï¿½ï¿½ï¿½
+        Debug.Log("ï¿½Lï¿½ï¿½ï¿½ï¿½");
     }
 }

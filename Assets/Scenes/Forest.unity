@@ -172,7 +172,7 @@ MonoBehaviour:
   mapBottomLeft: {x: -29.1, y: -8.2}
   mapTopRight: {x: -6.9, y: 12.4}
   spawnInterval: 1
-  maxMonsters: 5
+  maxMonsters: 7
 --- !u!1 &27465598 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1419639644693156167, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
@@ -193,7 +193,13 @@ MonoBehaviour:
   Hp: 10
   attack: {fileID: 0}
   knockbackForce: 10
+  ed: {fileID: 0}
+  ed2: {fileID: 0}
+  ed3: {fileID: 0}
+  ed4: {fileID: 0}
+  ed5: {fileID: 0}
   money: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!1 &33926548
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +405,7 @@ MonoBehaviour:
   mapBottomLeft: {x: -0.9, y: -23.2}
   mapTopRight: {x: 42.6, y: -15.8}
   spawnInterval: 1
-  maxMonsters: 5
+  maxMonsters: 10
 --- !u!4 &174745832
 Transform:
   m_ObjectHideFlags: 0
@@ -616,7 +622,13 @@ MonoBehaviour:
   Hp: 10
   attack: {fileID: 0}
   knockbackForce: 70
+  ed: {fileID: 0}
+  ed2: {fileID: 0}
+  ed3: {fileID: 0}
+  ed4: {fileID: 0}
+  ed5: {fileID: 0}
   money: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!1 &300486399
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,7 +926,7 @@ MonoBehaviour:
   mapBottomLeft: {x: 6.91, y: 0.62}
   mapTopRight: {x: 44.03, y: 4.77}
   spawnInterval: 1
-  maxMonsters: 5
+  maxMonsters: 8
 --- !u!4 &720157663
 Transform:
   m_ObjectHideFlags: 0
@@ -25119,7 +25131,13 @@ MonoBehaviour:
   Hp: 10
   attack: {fileID: 0}
   knockbackForce: 10
+  ed: {fileID: 0}
+  ed2: {fileID: 0}
+  ed3: {fileID: 0}
+  ed4: {fileID: 0}
+  ed5: {fileID: 0}
   money: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!1 &1033945739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5348635202126231720, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
@@ -25140,7 +25158,13 @@ MonoBehaviour:
   Hp: 10
   attack: {fileID: 0}
   knockbackForce: 10
+  ed: {fileID: 0}
+  ed2: {fileID: 0}
+  ed3: {fileID: 0}
+  ed4: {fileID: 0}
+  ed5: {fileID: 0}
   money: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!1 &1191590134
 GameObject:
   m_ObjectHideFlags: 0
@@ -86271,7 +86295,13 @@ MonoBehaviour:
   Hp: 10
   attack: {fileID: 0}
   knockbackForce: 10
+  ed: {fileID: 0}
+  ed2: {fileID: 0}
+  ed3: {fileID: 0}
+  ed4: {fileID: 0}
+  ed5: {fileID: 0}
   money: {fileID: 0}
+  player_bag: {fileID: 0}
 --- !u!4 &1997969573 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3737117280845305873, guid: 3505a28350ae15c4f885ec2fcad852af, type: 3}
@@ -86468,9 +86498,33 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6912477894997014112, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
+      propertyPath: ed
+      value: 
+      objectReference: {fileID: 11400000, guid: 4633f6da60835f94f98e0e95b04df898, type: 2}
+    - target: {fileID: 6912477894997014112, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
+      propertyPath: ed2
+      value: 
+      objectReference: {fileID: 11400000, guid: bfd9fa5ba7d63a441aa95550244310f3, type: 2}
+    - target: {fileID: 6912477894997014112, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
+      propertyPath: ed3
+      value: 
+      objectReference: {fileID: 11400000, guid: ddb4d099354d1b5418ac1871d2f25d3a, type: 2}
+    - target: {fileID: 6912477894997014112, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
+      propertyPath: ed4
+      value: 
+      objectReference: {fileID: 11400000, guid: 59d72baf9a6b0f14f840514a6b073593, type: 2}
+    - target: {fileID: 6912477894997014112, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
+      propertyPath: ed5
+      value: 
+      objectReference: {fileID: 11400000, guid: d73ba3b404295ab42bf6b15456cd5e91, type: 2}
+    - target: {fileID: 6912477894997014112, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
       propertyPath: money
       value: 
       objectReference: {fileID: 11400000, guid: 7e8379af841db5344a10b97462880697, type: 2}
+    - target: {fileID: 6912477894997014112, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
+      propertyPath: player_bag
+      value: 
+      objectReference: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
     - target: {fileID: 6912477894997014112, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
       propertyPath: knockbackForce
       value: 40
@@ -86500,9 +86554,33 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -3962371353107222205, guid: cf997d434b46d494a806567557633492, type: 3}
+      propertyPath: ed
+      value: 
+      objectReference: {fileID: 11400000, guid: 4633f6da60835f94f98e0e95b04df898, type: 2}
+    - target: {fileID: -3962371353107222205, guid: cf997d434b46d494a806567557633492, type: 3}
+      propertyPath: ed2
+      value: 
+      objectReference: {fileID: 11400000, guid: bfd9fa5ba7d63a441aa95550244310f3, type: 2}
+    - target: {fileID: -3962371353107222205, guid: cf997d434b46d494a806567557633492, type: 3}
+      propertyPath: ed3
+      value: 
+      objectReference: {fileID: 11400000, guid: ddb4d099354d1b5418ac1871d2f25d3a, type: 2}
+    - target: {fileID: -3962371353107222205, guid: cf997d434b46d494a806567557633492, type: 3}
+      propertyPath: ed4
+      value: 
+      objectReference: {fileID: 11400000, guid: 59d72baf9a6b0f14f840514a6b073593, type: 2}
+    - target: {fileID: -3962371353107222205, guid: cf997d434b46d494a806567557633492, type: 3}
+      propertyPath: ed5
+      value: 
+      objectReference: {fileID: 11400000, guid: d73ba3b404295ab42bf6b15456cd5e91, type: 2}
+    - target: {fileID: -3962371353107222205, guid: cf997d434b46d494a806567557633492, type: 3}
       propertyPath: money
       value: 
       objectReference: {fileID: 11400000, guid: 7e8379af841db5344a10b97462880697, type: 2}
+    - target: {fileID: -3962371353107222205, guid: cf997d434b46d494a806567557633492, type: 3}
+      propertyPath: player_bag
+      value: 
+      objectReference: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
     - target: {fileID: 1387182777889830879, guid: cf997d434b46d494a806567557633492, type: 3}
       propertyPath: m_Mass
       value: 10
@@ -86584,9 +86662,33 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2812228267131849666, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
+      propertyPath: ed
+      value: 
+      objectReference: {fileID: 11400000, guid: 4633f6da60835f94f98e0e95b04df898, type: 2}
+    - target: {fileID: 2812228267131849666, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
+      propertyPath: ed2
+      value: 
+      objectReference: {fileID: 11400000, guid: bfd9fa5ba7d63a441aa95550244310f3, type: 2}
+    - target: {fileID: 2812228267131849666, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
+      propertyPath: ed3
+      value: 
+      objectReference: {fileID: 11400000, guid: ddb4d099354d1b5418ac1871d2f25d3a, type: 2}
+    - target: {fileID: 2812228267131849666, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
+      propertyPath: ed4
+      value: 
+      objectReference: {fileID: 11400000, guid: 59d72baf9a6b0f14f840514a6b073593, type: 2}
+    - target: {fileID: 2812228267131849666, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
+      propertyPath: ed5
+      value: 
+      objectReference: {fileID: 11400000, guid: d73ba3b404295ab42bf6b15456cd5e91, type: 2}
+    - target: {fileID: 2812228267131849666, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
       propertyPath: money
       value: 
       objectReference: {fileID: 11400000, guid: 7e8379af841db5344a10b97462880697, type: 2}
+    - target: {fileID: 2812228267131849666, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
+      propertyPath: player_bag
+      value: 
+      objectReference: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
     - target: {fileID: 2812228267131849666, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
       propertyPath: knockbackForce
       value: 80
@@ -86660,9 +86762,33 @@ PrefabInstance:
       value: enemy3
       objectReference: {fileID: 0}
     - target: {fileID: 928064901179682064, guid: a80e666cfef479741a8cd167b9d677b7, type: 3}
+      propertyPath: ed
+      value: 
+      objectReference: {fileID: 11400000, guid: 4633f6da60835f94f98e0e95b04df898, type: 2}
+    - target: {fileID: 928064901179682064, guid: a80e666cfef479741a8cd167b9d677b7, type: 3}
+      propertyPath: ed2
+      value: 
+      objectReference: {fileID: 11400000, guid: bfd9fa5ba7d63a441aa95550244310f3, type: 2}
+    - target: {fileID: 928064901179682064, guid: a80e666cfef479741a8cd167b9d677b7, type: 3}
+      propertyPath: ed3
+      value: 
+      objectReference: {fileID: 11400000, guid: ddb4d099354d1b5418ac1871d2f25d3a, type: 2}
+    - target: {fileID: 928064901179682064, guid: a80e666cfef479741a8cd167b9d677b7, type: 3}
+      propertyPath: ed4
+      value: 
+      objectReference: {fileID: 11400000, guid: 59d72baf9a6b0f14f840514a6b073593, type: 2}
+    - target: {fileID: 928064901179682064, guid: a80e666cfef479741a8cd167b9d677b7, type: 3}
+      propertyPath: ed5
+      value: 
+      objectReference: {fileID: 11400000, guid: d73ba3b404295ab42bf6b15456cd5e91, type: 2}
+    - target: {fileID: 928064901179682064, guid: a80e666cfef479741a8cd167b9d677b7, type: 3}
       propertyPath: money
       value: 
       objectReference: {fileID: 11400000, guid: 7e8379af841db5344a10b97462880697, type: 2}
+    - target: {fileID: 928064901179682064, guid: a80e666cfef479741a8cd167b9d677b7, type: 3}
+      propertyPath: player_bag
+      value: 
+      objectReference: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
     - target: {fileID: 928064901179682064, guid: a80e666cfef479741a8cd167b9d677b7, type: 3}
       propertyPath: knockbackForce
       value: 60
@@ -86732,6 +86858,26 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -1605628319782784522, guid: ceba22d5cacebe646871d7bef0d0170c, type: 3}
+      propertyPath: ed
+      value: 
+      objectReference: {fileID: 11400000, guid: 4633f6da60835f94f98e0e95b04df898, type: 2}
+    - target: {fileID: -1605628319782784522, guid: ceba22d5cacebe646871d7bef0d0170c, type: 3}
+      propertyPath: ed2
+      value: 
+      objectReference: {fileID: 11400000, guid: bfd9fa5ba7d63a441aa95550244310f3, type: 2}
+    - target: {fileID: -1605628319782784522, guid: ceba22d5cacebe646871d7bef0d0170c, type: 3}
+      propertyPath: ed3
+      value: 
+      objectReference: {fileID: 11400000, guid: ddb4d099354d1b5418ac1871d2f25d3a, type: 2}
+    - target: {fileID: -1605628319782784522, guid: ceba22d5cacebe646871d7bef0d0170c, type: 3}
+      propertyPath: ed4
+      value: 
+      objectReference: {fileID: 11400000, guid: 59d72baf9a6b0f14f840514a6b073593, type: 2}
+    - target: {fileID: -1605628319782784522, guid: ceba22d5cacebe646871d7bef0d0170c, type: 3}
+      propertyPath: ed5
+      value: 
+      objectReference: {fileID: 11400000, guid: d73ba3b404295ab42bf6b15456cd5e91, type: 2}
+    - target: {fileID: -1605628319782784522, guid: ceba22d5cacebe646871d7bef0d0170c, type: 3}
       propertyPath: money
       value: 
       objectReference: {fileID: 11400000, guid: 7e8379af841db5344a10b97462880697, type: 2}
@@ -86739,6 +86885,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1605628319782784522, guid: ceba22d5cacebe646871d7bef0d0170c, type: 3}
+      propertyPath: player_bag
+      value: 
+      objectReference: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
     - target: {fileID: -1605628319782784522, guid: ceba22d5cacebe646871d7bef0d0170c, type: 3}
       propertyPath: knockbackForce
       value: 50
@@ -86749,7 +86899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 658312315855830326, guid: ceba22d5cacebe646871d7bef0d0170c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.45
+      value: -1.78
       objectReference: {fileID: 0}
     - target: {fileID: 658312315855830326, guid: ceba22d5cacebe646871d7bef0d0170c, type: 3}
       propertyPath: m_LocalPosition.z
