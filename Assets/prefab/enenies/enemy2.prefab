@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1387182777889830879}
   - component: {fileID: 3328265440552957454}
   - component: {fileID: -3962371353107222205}
+  - component: {fileID: 6395384045946487228}
   m_Layer: 0
   m_Name: enemy2
   m_TagString: enemy1
@@ -292,3 +293,19 @@ MonoBehaviour:
   ed5: {fileID: 11400000, guid: d73ba3b404295ab42bf6b15456cd5e91, type: 2}
   money: {fileID: 11400000, guid: 7e8379af841db5344a10b97462880697, type: 2}
   player_bag: {fileID: 11400000, guid: 732e8d974f6451840a214eafe4bc92d4, type: 2}
+--- !u!114 &6395384045946487228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6209056104616334221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1aba334cc66ab3448f87c6bbb416d05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  pauseTime: 2
+  rangeObjectMin: {fileID: 0}
+  rangeObjectMax: {fileID: 0}

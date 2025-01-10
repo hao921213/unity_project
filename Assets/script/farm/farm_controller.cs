@@ -40,7 +40,7 @@ public class farm_controller : MonoBehaviour
         update_animal();
     }
     public void update_hand_slot(){
-        if(hand.item!=null && hand.item.tag=="animal"){
+        if(hand.item!=null && (hand.item.tag=="animal" || hand.item.tag=="enemy1")){
             animal_image.gameObject.SetActive(true);
             animal_image.sprite=hand.item.item_image;
         }
@@ -93,7 +93,8 @@ public class farm_controller : MonoBehaviour
         }
     }
     public void push(){
-        if(hand.item!=null && hand.item.tag=="animal"){
+        if(hand.item!=null && (hand.item.tag == "animal" || hand.item.tag == "enemy1"))
+        {
             if(farm.itemlist.Count<7){
                 for(int i=0;i<farm.itemlist.Count;i++){
                     if(farm.itemlist[i].tag=="none"){

@@ -90,6 +90,7 @@ public class PlayerAttack : MonoBehaviour
                 {
                     Debug.Log("���a���`�A��������");
                     SceneManager.LoadScene("Home");
+                    hp.money = 0;
                     hp.health = 10; // ���m��q
                 }
             }

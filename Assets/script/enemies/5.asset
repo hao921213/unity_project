@@ -18,7 +18,7 @@ MonoBehaviour:
   price: 0
   held: 1
   iteminfo: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 5348635202126231720, guid: d8d9bd0878d195447b0166cf9c54d88e, type: 3}
   water: 0
   food: 0
-  grow: 0
+  grow: 3

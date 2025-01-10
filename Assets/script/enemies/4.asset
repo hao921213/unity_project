@@ -16,9 +16,9 @@ MonoBehaviour:
   item_name: enemy4
   item_image: {fileID: 727065752, guid: 886d8b9f107c3e845bd8c9fd0d7b3552, type: 3}
   price: 0
-  held: 2
+  held: 1
   iteminfo: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 1419639644693156167, guid: b4e393f7702912945bd46af2c596c51d, type: 3}
   water: 0
   food: 0
-  grow: 0
+  grow: 3
