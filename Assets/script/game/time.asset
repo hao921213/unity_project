@@ -12,14 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a999a7d50a94b94d89866819650bad9, type: 3}
   m_Name: time
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  count: 12.164833
-  hour: 8
-  day: 0
-  intensity: 1.0000716
-=======
   count: 7.86617
   hour: 11
   day: 7
   intensity: 0.21791582
->>>>>>> Stashed changes
