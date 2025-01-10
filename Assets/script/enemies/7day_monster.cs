@@ -25,7 +25,7 @@ public class day7monster : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if(time1.day % 7 == 0)
+        if(time1.day % 7 == 0 && time1.hour > 19)
         {
             StartCoroutine(SpawnMonstersOverTime());  
         }
