@@ -10,7 +10,7 @@ public class bed_place : MonoBehaviour
     public health_bar health_bar;
     private void Update()
     {
-        if (player_in == 1 && Input.GetKeyDown(KeyCode.E) && time.hour>18)
+        if (player_in == 1 && Input.GetKeyDown(KeyCode.E) && (time.hour>18 || time.hour<6))
         {
             animator.SetInteger("onsleep", 1);
             time.day++;

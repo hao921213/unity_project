@@ -16,7 +16,7 @@ MonoBehaviour:
   item_name: white_potion
   item_image: {fileID: -1419095664, guid: 8280fb0419376c24c976a2cbf27ac05d, type: 3}
   price: 0
-  held: 3
+  held: 1
   iteminfo: 
   prefab: {fileID: 0}
   water: 0

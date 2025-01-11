@@ -19522,23 +19522,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5107021799011606679, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.723279
+      value: 0.999887
       objectReference: {fileID: 0}
     - target: {fileID: 5107021799011606679, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.69055593
+      value: -0.015034861
       objectReference: {fileID: 0}
     - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_Intensity
       value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_PointLightInnerRadius
-      value: 11.019412
+      value: 0.9916007
       objectReference: {fileID: 0}
     - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 11.056464
+      value: 1.7000666
       objectReference: {fileID: 0}
     - target: {fileID: 8365654066666950505, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_SortingLayer

@@ -16,7 +16,7 @@ MonoBehaviour:
   item_name: pig_l3
   item_image: {fileID: -1792014262, guid: 706963e052c806c448479a4069917eea, type: 3}
   price: 150
-  held: 2
+  held: 1
   iteminfo: 
   prefab: {fileID: 1325391782606296745, guid: 4f44472333a8f594fa7ee559e9f4c45a, type: 3}
   water: 5

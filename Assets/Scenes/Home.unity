@@ -6925,6 +6925,10 @@ PrefabInstance:
       propertyPath: health_change
       value: 
       objectReference: {fileID: 1846956752}
+    - target: {fileID: 3228684861105733485, guid: 3505a28350ae15c4f885ec2fcad852af, type: 3}
+      propertyPath: health_change
+      value: 
+      objectReference: {fileID: 1846956752}
     - target: {fileID: 3737117280845305873, guid: 3505a28350ae15c4f885ec2fcad852af, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.71

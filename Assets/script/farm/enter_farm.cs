@@ -8,6 +8,9 @@ public class enter_farm : MonoBehaviour
     public farm_controller farm4;
     public farm_controller farm5;
     public farm_controller farm6;
+     void Update() {
+        farm1.update_animal_size();
+    }
     void Start()
     {
         farm1.update_animal();
@@ -16,6 +19,7 @@ public class enter_farm : MonoBehaviour
         farm4.update_animal();
         farm5.update_animal();
         farm6.update_animal();
+
 
     }
 
