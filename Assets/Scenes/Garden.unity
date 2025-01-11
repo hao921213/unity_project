@@ -707,7 +707,7 @@ Transform:
   m_GameObject: {fileID: 85078995}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.58, y: -0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19522,11 +19522,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5107021799011606679, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.999887
+      value: 0.71658707
       objectReference: {fileID: 0}
     - target: {fileID: 5107021799011606679, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.015034861
+      value: -0.6974977
       objectReference: {fileID: 0}
     - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_Intensity
@@ -19538,11 +19538,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_PointLightInnerRadius
-      value: 0.9916007
+      value: 1.9631546
       objectReference: {fileID: 0}
     - target: {fileID: 6526016116144082447, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_PointLightOuterRadius
-      value: 1.7000666
+      value: 7.51416
       objectReference: {fileID: 0}
     - target: {fileID: 8365654066666950505, guid: 4f3e061e01b178e449a55b54565c4496, type: 3}
       propertyPath: m_SortingLayer

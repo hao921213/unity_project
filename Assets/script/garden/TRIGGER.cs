@@ -136,26 +136,21 @@ public class TRIGGER : MonoBehaviour
     }
     void phrase_switch(crop_pic_class crop)
     {
-        //Debug.Log("phrase: " + phrase);
         if(phrase == 0)
         {
             spriteRenderer.sprite = crop.sprite0;
-            //Debug.Log("find: " + find);
         }
         else if(phrase == 1)
         {
             spriteRenderer.sprite = crop.sprite1;
-            //Debug.Log("0");
         }
         else if(phrase == 2)
         {
             spriteRenderer.sprite = crop.sprite2;
-            //Debug.Log("0");
         }
         else if(phrase == 3)
         {
             spriteRenderer.sprite = crop.sprite3;
-            //Debug.Log("0");
         }
         else if(phrase >= 4)
         {
@@ -170,7 +165,6 @@ public class TRIGGER : MonoBehaviour
                 save_phase(phrase);
                 save_type(find);
                 save_water(0);
-                //Debug.Log("0");
             }
         }
     }
@@ -188,10 +182,8 @@ public class TRIGGER : MonoBehaviour
             {
                 update_image();
                 after_used(hand.item);
-                hand.item = null;
-                phrase = 0;
+                phrase = 0;//註掉
                 save_phase(phrase);
-                //Debug.Log("find: " + find + " time_chack: " + time_chack + " time1_hour: " + time1.hour);
             }
         }
         if (enter == 1 && Input.GetKeyDown(KeyCode.E) && phrase == 0)
@@ -199,18 +191,16 @@ public class TRIGGER : MonoBehaviour
             if (hand.item != null && hand.item.item_name == "waterer")
             {
                 water();
-                //Debug.Log("find: " + find + " time_chack: " + time_chack + " time1_hour: " + time1.hour);
             }
         }
         
         spriteRenderer = GetComponent<SpriteRenderer>();
         
-        if (find != -1 && time_chack != time1.hour && watered == 1) //
+        if (find != -1 && time_chack != time1.hour) //&& watered == 1
         {
             phrase ++;
             save_phase(phrase);
             time_chack = time1.hour;
-            //Debug.Log("phrase: " + phrase);
         }
         switch (find)
         {
@@ -233,7 +223,6 @@ public class TRIGGER : MonoBehaviour
                 phrase_switch(w_carrot);
                 break;
             default:
-                // 當表達式的值不匹配任何 case 時執行此處代碼
                 break;
         }
         stop_hour = time1.hour;
@@ -244,35 +233,3 @@ public class TRIGGER : MonoBehaviour
     }
 
 }
-// if(phrase == 0)
-// {
-//     spriteRenderer.sprite = straw.sprite0;
-// }
-// else if(phrase == 1)
-// {
-//     spriteRenderer.sprite = straw.sprite1;
-// }
-// else if(phrase == 2)
-// {
-//     spriteRenderer.sprite = straw.sprite2;
-// }
-// else if(phrase == 3)
-// {
-//     spriteRenderer.sprite = straw.sprite3;
-// }
-// else if(phrase >= 1)
-// {
-//     spriteRenderer.sprite = straw.sprite4;
-    
-//     if (enter == 1 && Input.GetKeyDown(KeyCode.E))
-//     {
-//         //Debug.Log("hi");
-//         spriteRenderer.sprite = null;
-//         //Debug.Log(player_bag.itemlist.Count);
-//         player_get(straw.item);
-//         find = -1;
-//         phrase = -1;
-//         watered = 0;
-//     }
-    
-// }

@@ -9,6 +9,7 @@ public class crop_pic_class : ScriptableObject
     public Sprite sprite3;
     public Sprite sprite4;
     public item item;
+
     public string description;
     public int spriteID;
 }
